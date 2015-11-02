@@ -37,8 +37,6 @@ angular.module('starter', ['ionic', 'starter.controllers','timer','LocalStorageM
     100 : 'data/practice1.js',
     200 : 'data/practice2.js',
     300 : 'data/exam.js'
-
-
 })
 .config(function($stateProvider, $urlRouterProvider) {
   $stateProvider

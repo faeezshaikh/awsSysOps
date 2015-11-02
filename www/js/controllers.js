@@ -5,6 +5,7 @@ angular.module('starter.controllers', [])
   var warned = false;
   var practiceExam = false;
   var examTopic = $stateParams.topicId;
+  
 
   var tSetting = awsService.getTimerSettings();
   if (tSetting === 'on') {
@@ -58,8 +59,8 @@ angular.module('starter.controllers', [])
         $scope.showTimer = true;
  
         if (examTopic == 300) {
-          $scope.timer = 3300;
-        }
+            $scope.timer = 4800;
+         }
 
       } else {
           // Show the modal if not warned.
@@ -145,7 +146,7 @@ angular.module('starter.controllers', [])
     // if (question.QuestionTypeId == 1) { 
     question.Options.forEach(function(element, index, array) {
       if (element.Id != option.Id) {
-        element.Selected = false;
+       // element.Selected = false;
         question.Answered = element.Id;
       }
     });
@@ -190,7 +191,6 @@ angular.module('starter.controllers', [])
     question.Options.forEach(function(option, index, array) {
       if (toBool(option.Selected) != option.IsAnswer) {
         result = 'Wrong';
-
         return false;
       }
     });
@@ -247,21 +247,21 @@ angular.module('starter.controllers', [])
     $scope.score = 0;
 
     $scope.$broadcast('timer-stop');
+    
     $scope.questions.forEach(function(q, index) {
-      q.Options.forEach(function(option, index, array) {
-
-        if (option.IsAnswer === true) {
-          if (option.Selected) {
-            if (option.Selected === false) {
-              $scope.wrong++;
-            }
-          } else {
-            $scope.wrong++;
-          }
-
-        }
-      });
+    	
+//    		foo(q);
+    	  if($scope.isCorrect(q) == 'Correct') {
+    		  
+    	  } else {
+    		  $scope.wrong++;
+    	  }
+    		
+      
+      
     });
+    
+    
     var correct = $scope.totalQues - $scope.wrong;
     $scope.score = Math.round((Number(correct) / $scope.totalQues) * 100);
     $scope.verdict = ($scope.score > 65) ? 'Pass' : 'Fail';
@@ -269,4 +269,35 @@ angular.module('starter.controllers', [])
     awsService.updateScoreForTopics(examTopic, $scope.score);
     $scope.mode.value = 'result';
   }
+  
+  /*function foo(question) {
+	  question.Options.forEach(function(option, index, array) {
+
+	       	// if  option is the answer and its not selected --> wrong
+	      	// if option is not the answer and if its selected --> wrong
+	       	// if  option is the answer and its selected check if there is any other option thats not the answer if yes --> wrong
+	        	  
+	        	  
+	            if (option.IsAnswer === true) {
+	              if (option.Selected) {
+	                if (option.Selected === false) {
+	                  $scope.wrong++;  // if  option is the answer and its not selected --> wrong
+	                }
+	              } else {
+	                $scope.wrong++;
+	              }
+	              
+
+	            } else {
+	            	// if option is not the answer and if its selected --> wrong
+	            	if (option.Selected && option.Selected === true) {
+	            		$scope.wrong++;
+	            	}
+	            }
+	            
+	            
+	            
+	          });
+	          
+  }*/
 });

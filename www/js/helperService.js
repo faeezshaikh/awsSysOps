@@ -198,6 +198,8 @@ angular.module('starter')
             getTimerSettings: function() {
                 return timerSetting;
             }
+            
+            
         };
 
 })
