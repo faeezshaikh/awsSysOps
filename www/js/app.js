@@ -19,6 +19,8 @@ angular.module('starter', ['ionic', 'starter.controllers','timer','LocalStorageM
       // org.apache.cordova.statusbar required
       StatusBar.styleDefault();
     }
+    
+  
   });
 })
 .constant('topicMap', {
@@ -61,6 +63,14 @@ angular.module('starter', ['ionic', 'starter.controllers','timer','LocalStorageM
       views: {
         'menuContent': {
           templateUrl: 'templates/settings.html'
+        }
+      }
+    })
+    .state('app.share', {
+      url: '/share',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/share.html'
         }
       }
     })
