@@ -19,7 +19,6 @@ angular.module('starter', ['ionic', 'starter.controllers','timer','LocalStorageM
       // org.apache.cordova.statusbar required
       StatusBar.styleDefault();
     }
-    
   
   });
 })
