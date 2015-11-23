@@ -302,8 +302,8 @@
         "Name": "In AWS VPC means: ", 
         
         "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "Virtual Public Cloud", "IsAnswer": true },
-            { "Id": 1056, "QuestionId": 1010, "Name": "Virtual Private Cloud", "IsAnswer": false },
+            { "Id": 1055, "QuestionId": 1010, "Name": "Virtual Public Cloud", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Virtual Private Cloud", "IsAnswer": true },
             { "Id": 1057, "QuestionId": 1010, "Name": "Virtually Private Center", "IsAnswer": false }]
         
     }]
