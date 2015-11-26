@@ -81,6 +81,14 @@ angular.module('starter', ['ionic', 'starter.controllers','timer','LocalStorageM
         }
       }
     })
+    .state('app.chat', {
+				url : '/chat',
+				views : {
+					'menuContent' : {
+						templateUrl : 'templates/chat.html'
+					}
+				}
+			})
 
   .state('app.single', {
     url: '/topics/:topicId',
