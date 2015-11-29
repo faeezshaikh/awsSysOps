@@ -4,7 +4,7 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers','timer','LocalStorageModule'])
+angular.module('starter', ['ionic', 'starter.controllers','timer','LocalStorageModule','ionic.contrib.ui.tinderCards'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -89,6 +89,14 @@ angular.module('starter', ['ionic', 'starter.controllers','timer','LocalStorageM
 					}
 				}
 			})
+			 .state('app.cards', {
+				url : '/cards',
+				views : {
+					'menuContent' : {
+						templateUrl : 'templates/cards.html'
+					}
+				}
+			})
 
   .state('app.single', {
     url: '/topics/:topicId',
@@ -112,4 +120,17 @@ angular.module('starter', ['ionic', 'starter.controllers','timer','LocalStorageM
 		   }
 		   return $location.path();
 		});
+})
+
+.directive('noScroll', function($document) {
+
+  return {
+    restrict: 'A',
+    link: function($scope, $element, $attr) {
+
+      $document.on('touchmove', function(e) {
+        e.preventDefault();
+      });
+    }
+  }
 });
