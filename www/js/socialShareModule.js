@@ -4,6 +4,9 @@ angular.module('socialShareModule', [ 'ngCordova' ]).service('shareService', [ '
 	function isSharingPossible(network) {
 		
 		var channel,fn,platform,url;
+		
+		// Install this plugin into the project first:
+		//			cordova plugin add org.apache.cordova.device
 		var p = $cordovaDevice.getPlatform();
 		console.log('FB Social Share');
 		if(p == 'iOS') {
