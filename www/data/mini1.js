@@ -6,97 +6,109 @@
     },
     "questions": [{
         "Id": 1,
-        "Name": "The backup policy of your company dicatates that backed up data should be quickly accessible within minutes for the first 6 months. After that, the data should be archived. Is this possible in AWS. If yes, how?",
+        "Name": "You configured a standy for a RDS instance. Will the stand-by instance be in the same Availability Zone as the primary?",
         "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "Data can only be backed up once. so this is not possible.", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "Create a life cycle policy that automatically moves the data to Glacier after 6 months", "IsAnswer": true },
-            { "Id": 1057, "QuestionId": 1010, "Name": "Set a SWF workflow to send a reminder after 6 months for manually moving the data to Glacier.", "IsAnswer": false },
-            { "Id": 1058, "QuestionId": 1010, "Name": "Using SWF, set a task to automatically backup data to Glacier after 6 months", "IsAnswer": false }]
+            { "Id": 1055, "QuestionId": 1010, "Name": "Yes", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "No", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Only for MySql RDS instances.", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Only if configured at launch", "IsAnswer": false }]
                 
        
     },
     {
         "Id": 2,
-        "Name": "S3 offers 2 types of storage classes: Standard and Standard-Infrequent Access only.", 
+        "Name": "Which of the following is best suited for Database style apps that need frequent random reads and writes across datasets?", 
         
         "Options": [
-             { "Id": 1055, "QuestionId": 1010, "Name": "True", "IsAnswer": false },
-             { "Id": 1056, "QuestionId": 1010, "Name": "False", "IsAnswer": true }]
+             { "Id": 1055, "QuestionId": 1010, "Name": "S3", "IsAnswer": false },
+             { "Id": 1056, "QuestionId": 1010, "Name": "EBS", "IsAnswer": true },
+             { "Id": 1057, "QuestionId": 1010, "Name": "S3 RRS", "IsAnswer": false },
+             { "Id": 1058, "QuestionId": 1010, "Name": "Root device", "IsAnswer": false }]
         
     },
     {
         "Id": 3,
-        "Name": "You need to delete a large number of objects from your S3 bucket. Whats the best way to do this?", 
+        "Name": "A company needs to monitor the read and write IOPs metrics for their AWS MySQL RDS instance and send real-time alerts to their operations team. Which AWS services can accomplish this? Choose 2 answers", 
         "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "Delete objects one by one from the AWS console.", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "Use Multi-Object Delete to delete large numbers of objects from Amazon S3. ", "IsAnswer": true },
-            { "Id": 1056, "QuestionId": 1010, "Name": "Write a query to delete all objects in CLI", "IsAnswer": false }]
+            { "Id": 1055, "QuestionId": 1010, "Name": "Amazon Simple Email Service", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Amazon CloudWatch", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Amazon Simple Queue Service", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Amazon Route 53", "IsAnswer": false },
+            { "Id": 1059, "QuestionId": 1010, "Name": "Amazon Simple Notification Service", "IsAnswer": true }]
         
     },
     {
         "Id": 4,
-        "Name": "Objects smaller than 128KB will incur charges for Standard-IA storage class:", 
+        "Name": "Which of the following are best suited for Amazon DynamoDB? Choose 3 answers", 
         
         "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "True", "IsAnswer": true },
-            { "Id": 1057, "QuestionId": 1010, "Name": "False", "IsAnswer": false }] 
+            { "Id": 1055, "QuestionId": 1010, "Name": "Storing BLOB data.", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Managing web sessions.", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Storing JSON documents.", "IsAnswer": true },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Storing metadata for Amazon S3 objects.", "IsAnswer": true },
+            { "Id": 1059, "QuestionId": 1010, "Name": "Running relational joins and complex updates.", "IsAnswer": false },
+            { "Id": 1060, "QuestionId": 1010, "Name": "Storing large amounts of infrequently accessed data.", "IsAnswer": false }] 
     },
     {
         "Id": 5,
-        "Name": "The largest object that can be uploaded in a single PUT is ________", 
+        "Name": "A web-startup is deploying a two-tier, highly available web application to AWS. Which service provides durable storage for static content while utilizing lower overall CPU resources for the web tier?", 
         
         "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "10 MB", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "5 GB", "IsAnswer": true },
-            { "Id": 1057, "QuestionId": 1010, "Name": "1 TB", "IsAnswer": false },
-            { "Id": 1058, "QuestionId": 1010, "Name": "100 MB", "IsAnswer": false }]
+            { "Id": 1055, "QuestionId": 1010, "Name": "Amazon EBS volume", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Amazon S3", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Amazon EC2 instance store", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Amazon RDS instance", "IsAnswer": false }]
     },
     {
         "Id": 6,
-        "Name": "Amazon recommends that for objects larger than 100 megabytes, customers should consider using the Multipart Upload capability.", 
+        "Name": "Which of the following services natively encrypts data at rest within an AWS region? Choose 2 answers", 
         
         "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "True", "IsAnswer": true },
-            { "Id": 1057, "QuestionId": 1010, "Name": "False", "IsAnswer": false }]
+            { "Id": 1055, "QuestionId": 1010, "Name": "AWS Storage Gateway", "IsAnswer": true },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Amazon DynamoDB", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Amazon CloudFront", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Amazon Glacier", "IsAnswer": true },
+            { "Id": 1059, "QuestionId": 1010, "Name": "Amazon Simple Queue Service", "IsAnswer": false }]
         
     },
     {
         "Id": 7,
-        "Name": "Individual Amazon S3 objects can range in size from _____ to ______", 
+        "Name": "The initial setting for the default security group is:", 
         
       "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "1 bytes to 5 GB", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "100 Kb to 10 GB", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "1 byte to 5 Terabytes", "IsAnswer": true },
-            { "Id": 1056, "QuestionId": 1010, "Name": "0 to 5 TB", "IsAnswer": false }]
+            { "Id": 1055, "QuestionId": 1010, "Name": "Allow no inbound traffic, Allow all outbound traffic and Allow instances associated with this security group to talk to each other", "IsAnswer": true },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Allow all inbound traffic, Allow no outbound traffic and Allow instances associated with this security group to talk to each other", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Allow no inbound traffic, Allow all outbound traffic and Does NOT allow instances associated with this security group to talk to each other", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Allow all inbound traffic, Allow all outbound traffic and Does NOT allow instances associated with this security group to talk to each other", "IsAnswer": false }]
         
     },
     {
         "Id": 8,
-        "Name": "S3 uses this type of encryption for its buckets:", 
+        "Name": "If your DB instance runs out of storage space or file system resources, its status will change to _____ and your DB Instance will no longer be available.", 
         
         "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "Data Encryption Standard (DES)", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "Advanced Encryption Standard (AES) 256", "IsAnswer": true},
-            { "Id": 1057, "QuestionId": 1010, "Name": "Advanced Encryption Standard (AES) 128", "IsAnswer": false},
-            { "Id": 1058, "QuestionId": 1010, "Name": "MDH 256", "IsAnswer": false}]
+            { "Id": 1055, "QuestionId": 1010, "Name": "storage-overflow", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "storage-full", "IsAnswer": true},
+            { "Id": 1057, "QuestionId": 1010, "Name": "storage-exceed", "IsAnswer": false},
+            { "Id": 1058, "QuestionId": 1010, "Name": "storage-overage", "IsAnswer": false}]
     },
     {
         "Id": 9,
-        "Name": "The URL for a static hosting website in a bucket call 'cloudinstitute' inside New York would be: ", 
+        "Name": "For which of the following will you choose Provisioned IOPS over Standard RDS storage?", 
         "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "http://www.cloudinstitute.s3-website-ap-northeast-1.amazonaws.com", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "http://cloudinstitute.s3-website-ap-northeast-1.amazonaws.com", "IsAnswer": true },
-            { "Id": 1057, "QuestionId": 1010, "Name": "http://s3-website-ap-cloudinstitute.northeast-1.amazonaws.com", "IsAnswer": false },
-            { "Id": 1058, "QuestionId": 1010, "Name": "http://s3-website-ap-northeast-1.cloudinstitute.amazonaws.com", "IsAnswer": false }]
+            { "Id": 1055, "QuestionId": 1010, "Name": "Production online transaction processing (OLTP) workloads.", "IsAnswer": true },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Batch-oriented workloads", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Workloads that are not sensitive to consistent performance", "IsAnswer": false }]
         
     },
     {
         "Id": 10,
-        "Name": "In S3 you enable and disable versioning at any time.", 
+        "Name": "In the 'Detailed' monitoring data available for your Amazon EBS volumes, Provisioned IOPS volumes automatically send _____ minute metrics to Amazon CloudWatch.", 
        "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "True", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "False. Once enabled you can only suspend", "IsAnswer": true }]
+            { "Id": 1055, "QuestionId": 1010, "Name": "5", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "1", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "3", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "10", "IsAnswer": false }]
     }
      ]
 }

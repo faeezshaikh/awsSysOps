@@ -32,12 +32,12 @@ angular.module('starter.controllers', [ 'socialShareModule'])
 
 		file = topicMap[examTopic];
 
-		if (examTopic == 100 || examTopic == 200 || examTopic == 300) {
+		if (examTopic == 100 || examTopic == 200 || examTopic == 300 || examTopic == 400 || examTopic == 500) {
 			// If its one of the mock exams
 			practiceExam = true;
 
 			if ($scope.showTimer) {
-				$scope.timer = 2400;
+				$scope.timer = 2400;  // 40 minutes for practice exam
 			}
 
 			// Show a warning modal first
@@ -47,13 +47,19 @@ angular.module('starter.controllers', [ 'socialShareModule'])
 				$scope.showTimer = true;
 
 				if (examTopic == 300) {
-					$scope.timer = 4800;
+					$scope.timer = 4800;   // 80 minutes for cert exam
+				}
+				if (examTopic == 400) {
+					$scope.timer = 900;  // 15 minutes for mini exams
 				}
 
 			} else {
 				// Show the modal if not warned.
 				if (examTopic == 300) {
 					$scope.bigExam = 'big'; // the Warning modal differs for practice exam vs certification exam in title
+				}
+				if (examTopic == 400) {
+					$scope.bigExam = 'mini'; // the Warning modal differs for practice exam vs certification exam in title
 				}
 
 				$ionicModal.fromTemplateUrl('templates/warningModal.html', {
