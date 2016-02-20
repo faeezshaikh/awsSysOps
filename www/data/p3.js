@@ -1,7 +1,7 @@
 {
     "quiz": {
         "Id": 3,
-        "name": "IAM Quiz",
+        "name": "Practice Quiz 3",
         "logo" : "data/img/IAM.png"
     },
     "questions": [{
@@ -36,11 +36,13 @@
     },
     {
         "Id": 1013,
-        "Name": "You can associate only one IAM role with an EC2 instance", 
+        "Name": "An autoscaling group is launched with a cluster of EC2 instances. These EC2 instances will need to write custom metric to Cloud Watch and will need the appropriate permissions in which to do this. What is the most secure way to enable this?", 
         
         "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "True", "IsAnswer": true },
-            { "Id": 1056, "QuestionId": 1010, "Name": "False", "IsAnswer": false }]
+            { "Id": 1055, "QuestionId": 1010, "Name": "Create a unique user in IAM with CloudWatch permissions and modify the autoscaling group to include a boot strap script that passes the EC2 instance that users credentials.", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Create a unique user in IAM with CloudWatch permissions and store these credentials in GitHub. Have the EC2 instances pull these credentials when they need to log to CloudWatch", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Create an IAM role with CloudWatch permissions and modify the autoscaling launch configuration to use EC2 instances that have been assigned the new role.", "IsAnswer": true },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Create an IAM role with CloudWatch permissions and assign this to RDS. The existing EC2 instances will automatically be able to report to CloudWatch via RDS.", "IsAnswer": false }]
         
     },
     {
@@ -67,13 +69,13 @@
     },
     {
         "Id": 1016,
-        "Name": "Which of the followig feature allows your users to authenticate using Google or Facebook?", 
+        "Name": "{ 'Version': '2012-10-17', 'Statement': [ { 'Action': [ 'autoscaling:Describe*', 'cloudwatch:*', 'logs:*', 'sns:*' ], 'Effect': 'Allow', 'Resource': '*' } ] } ", 
         
         "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "Web Identification Services", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "Web Identity Federation", "IsAnswer": true },
-            { "Id": 1057, "QuestionId": 1010, "Name": "Active Directory Authentication Services", "IsAnswer": false },
-            { "Id": 1058, "QuestionId": 1010, "Name": "Third Party Federation", "IsAnswer": false }]
+            { "Id": 1055, "QuestionId": 1010, "Name": "This policy Allows full access to RDS", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "This policy Allows Read Only Access to CloudWatch", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "This policy Allows Write & Read Access to Cloudwatch only. ", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "This policy Allows full access to CloudWatch", "IsAnswer": true }]
         
     },
     {
@@ -88,13 +90,13 @@
     },
     {
         "Id": 1018,
-        "Name": "Which of the following is NOT supported by IAM?", 
+        "Name": "A stateless web application runs on a m4.10xlarge EC2 instance. The application is both memory and CPU intensive and is not performing well when under heavy load. Users are reporting long delays in the application's performance. The application itself maintains its state in DynamoDB. The DynamoDB table is properly provisioned and responses are returning really fast. What option below will best resolve this issue?", 
         
         "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "Integration with Identity Providers and with existing active directory accounts", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "Fine-grained access control to AWS resources", "IsAnswer": false },
-            { "Id": 1057, "QuestionId": 1010, "Name": "Finger printing authentication", "IsAnswer": true },
-            { "Id": 1058, "QuestionId": 1010, "Name": "Centralised control of your AWS account", "IsAnswer": false }]
+            { "Id": 1055, "QuestionId": 1010, "Name": "Create a DynamoDB read replica to further scale the database out.", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "DyanmoDB is not performing fast enough due to the amount of load. Cache the queries using Elasticache.", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "The latency issue is being caused because the EC2 instance and the DynamoDB table are not in the same availability zone. Move the EC2 instance to same AZ as the DynamoDB table.", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "There is obviously an issue with the memory/CPU load. Provision another m4.10xlarge EC2 instance and place both EC2 instances behind an Elastic Load Balancer to help even the load.", "IsAnswer": true }]
         
     },
     {

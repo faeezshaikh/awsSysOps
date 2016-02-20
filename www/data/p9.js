@@ -1,7 +1,7 @@
 {
     "quiz": {
         "Id": 9,
-        "name": "SNS Quiz",
+        "name": "Practice Quiz 9",
         "logo" : "data/img/SNS.png"
     },
     "questions": [{
@@ -15,11 +15,13 @@
     },
     {
         "Id": 1011,
-        "Name": "SQS follows the the 'publish-subscribe' (pub-sub) messaging paradigm", 
+        "Name": "Which of the following is a true statement. (Choose 2 answers)", 
         
         "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "True", "IsAnswer": false },
-            { "Id": 1057, "QuestionId": 1010, "Name": "False", "IsAnswer": true }]
+            { "Id": 1055, "QuestionId": 1010, "Name": "SQS follows the the 'publish-subscribe' (pub-sub) messaging paradigm", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "SNS is based on push mechanism and not pull mechanism.", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "SNS and SWF can be used to fan-out", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "SNS and SQS can be used to fan-out", "IsAnswer": true }]
         
     },
     {
@@ -35,11 +37,14 @@
     },
     {
         "Id": 1013,
-        "Name": "SNS is based on push mechanism and not pull mechanism.", 
+        "Name": "Your CIO has requested that the company should be able to track all changes made to the company's AWS environment, by all users and at all times, in all regions. Which AWS service should you use to achieve this?", 
         
         "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "True", "IsAnswer": true },
-            { "Id": 1056, "QuestionId": 1010, "Name": "False", "IsAnswer": false }]
+            { "Id": 1055, "QuestionId": 1010, "Name": "SQS", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "CloudAudit", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "CloudWatch", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "CloudTrail", "IsAnswer": true },
+            { "Id": 1059, "QuestionId": 1010, "Name": "CloudTrace", "IsAnswer": false }]
         
     },
     {
@@ -58,11 +63,15 @@
     },
     {
         "Id": 1015,
-        "Name": "In SNS you can customize or format messages separately for different protocols.", 
+        "Name": "Which of the following is NOT a valid SNS subscribers", 
         
         "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "True", "IsAnswer": true },
-            { "Id": 1056, "QuestionId": 1010, "Name": "False", "IsAnswer": false }]
+            { "Id": 1055, "QuestionId": 1010, "Name": "Lambda", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "SWF", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "SQS", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Email", "IsAnswer": false },
+            { "Id": 1059, "QuestionId": 1010, "Name": "HTTPS", "IsAnswer": false },
+            { "Id": 1060, "QuestionId": 1010, "Name": "SMS", "IsAnswer": false }]
         
     },
     {
@@ -72,7 +81,8 @@
         "Options": [
             { "Id": 1055, "QuestionId": 1010, "Name": "A Queue", "IsAnswer": false },
             { "Id": 1056, "QuestionId": 1010, "Name": "A Topic", "IsAnswer": true },
-            { "Id": 1057, "QuestionId": 1010, "Name": "A Newsletter", "IsAnswer": false }]
+            { "Id": 1057, "QuestionId": 1010, "Name": "A Newsletter", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "A Stack", "IsAnswer": false }]
         
     },
     {

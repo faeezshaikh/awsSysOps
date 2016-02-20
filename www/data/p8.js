@@ -1,12 +1,12 @@
 {
     "quiz": {
         "Id": 8,
-        "name": "SQS Quiz",
+        "name": "Practice Quiz 8",
         "logo" : "data/img/SQS.png"
     },
     "questions": [{
         "Id": 1,
-        "Name": "Using the access policy language, you wish to restrict access to a queue by IP address and time of day for instance. How can you do this?",
+        "Name": "Using the access policy language, you wish to restrict access to a SQS queue by IP address and time of day. How can you do this?",
         "Options": [
             { "Id": 1055, "QuestionId": 1010, "Name": "Contact AWS support team", "IsAnswer": false },
             { "Id": 1056, "QuestionId": 1010, "Name": "Use SetQueueAttributes with JSON objects", "IsAnswer": true },
@@ -17,13 +17,11 @@
     },
     {
         "Id": 2,
-        "Name": "What is the default period for which messages will stay in SQS queues:", 
+        "Name": "Elastic Beanstalk itself is not free free AND you must also pay for the resources it provisions.", 
         
         "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "1 hr", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "4 days", "IsAnswer": true },
-            { "Id": 1057, "QuestionId": 1010, "Name": "10 days", "IsAnswer": false },
-            { "Id": 1058, "QuestionId": 1010, "Name": "1 week", "IsAnswer": false }]
+             { "Id": 1055, "QuestionId": 1010, "Name": "True", "IsAnswer": false },
+             { "Id": 1056, "QuestionId": 1010, "Name": "False", "IsAnswer": true }]
         
     },
     {
@@ -70,11 +68,13 @@
     },
     {
         "Id": 7,
-        "Name": "In SQS, a message can be delivered at least once but also multiple times.", 
+        "Name": "With regard to Amazon SQS, which of the following is a true statement. ", 
         
       "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "False", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "True", "IsAnswer": true }]
+            { "Id": 1055, "QuestionId": 1010, "Name": "In SQS, a message is delivered only once.", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "In SQS, a message can be delivered at least once but also multiple times.", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "In SQS, messages are delivered in First In First Out (FIFO) method.", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "In SQS, messages are delivered in Last In First Out (LIFO) method.", "IsAnswer": false }]
         
     },
     {
@@ -100,11 +100,13 @@
     },
     {
         "Id": 10,
-        "Name": "SQS was the first service on the AWS platform?",
+        "Name": "A company has moved to AWS because of the ability to use 'scripted infrastructure'. They would like to apply version control on their infrastructure (similar to software development) so that they can roll back infrastructure to a previous stable version if needed. They would also like to to quickly deploy testing and staging environments in multiple regions. What services should you use to achieve this?",
         
        "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "False", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "True", "IsAnswer": true }]
+            { "Id": 1055, "QuestionId": 1010, "Name": "Opsworks & a version control system such as GitHub.", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Elastic BeanStalk & a version control system such as GitHub.", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "CloudWatch & a version control system such as GitHub.", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "CloudFormation & a version control system such as GitHub.", "IsAnswer": true }]
     }
      ]
 }

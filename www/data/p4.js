@@ -1,7 +1,7 @@
 {
     "quiz": {
         "Id": 4,
-        "name": "EC2 Quiz",
+        "name": "Practice Quiz 4",
         "description": "",
         "logo" : "data/img/EC2.png"
     },
@@ -51,7 +51,7 @@
     },
     {
         "Id": 1015,
-        "Name": "EBS volumes are backed by S3 storage", 
+        "Name": "EBS snapshots are backed by S3 storage", 
         "Options": [
             { "Id": 1055, "QuestionId": 1010, "Name": "True", "IsAnswer": true },
             { "Id": 1057, "QuestionId": 1010, "Name": "False", "IsAnswer": false }]
@@ -87,12 +87,12 @@
     },
     {
         "Id": 1019,
-        "Name": "How many Elastic IPs can you have per region?", 
+        "Name": "A utility company is building an application that stores data coming from more than 10,000 sensors. Each sensor has a unique ID and will send a data point ( approximately 1KB) every 10 minutes throughout the day. Each data point contains the information coming from the sensor as well as timestamp. This company would like to query information coming from a particular sensor fro the past week very rapidly and would like to delete all data that is older than four weeks. Using Amazon dynamo DB for its scalability and rapidity, how would you implement this is the most cost-effective way ?", 
         "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "50", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "2", "IsAnswer": false },
-            { "Id": 1057, "QuestionId": 1010, "Name": "5", "IsAnswer": true },
-            { "Id": 1058, "QuestionId": 1010, "Name": "10", "IsAnswer": false }]
+            { "Id": 1055, "QuestionId": 1010, "Name": "One table , with a primary key that is the sensor ID, and a hash key that is the time stamp", "IsAnswer": true },
+            { "Id": 1056, "QuestionId": 1010, "Name": "One table for each week with a primary key that is the sensor ID, and hash key that is the timestamp", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "One table for each week, with a primary key that is the concatenation of the sensor ID and the timestamp.", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "One table with a primary key that is concatenation of the sensor ID and the time stamp", "IsAnswer": false }]
         
     }]
 }

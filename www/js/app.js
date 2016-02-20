@@ -23,20 +23,19 @@ angular.module('starter', ['ionic', 'starter.controllers','timer','LocalStorageM
   });
 })
 .constant('topicMap', {
-    1 : 'data/route53.js',
-    2 : 'data/rds.js',
-    3 : 'data/iam.js',
-    4 : 'data/ec2.js',
-    5 : 'data/s3.js',
-    6 : 'data/vpc.js',
-    7 : 'data/beanstalk.js',
-    8 : 'data/sqs.js',
-    9 : 'data/sns.js',
-    10 : 'data/swf.js',
+    1 : 'data/p1.js',
+    2 : 'data/p2.js',
+    3 : 'data/p3.js',
+    4 : 'data/p4.js',
+    5 : 'data/p5.js',
+    6 : 'data/p6.js',
+    7 : 'data/p7.js',
+    8 : 'data/p8.js',
+    9 : 'data/p9.js',
+    10 : 'data/p10.js',
     11 : 'data/dynamoDb.js',
     12 : 'data/cf.js',
     100 : 'data/practice1.js',
-    200 : 'data/practice2.js',
     300 : 'data/exam.js',
     400: 'data/mini1.js'
 })

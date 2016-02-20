@@ -1,7 +1,7 @@
 {
     "quiz": {
         "Id": 15,
-        "name": "Certification Exam",
+        "name": "Certification Exam 3",
         "logo" : "data/img/certified.png"
     },
     "questions": [{
@@ -293,321 +293,278 @@
         
     },
     {
-      "Id": 31,
-      "Name": "You are not able to RDP to a Windows Server 2010 EC2 instance from your corporate desktop. Which of the following is not a valid reason for this?",  
-        "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "The IP of your desktop is being blocked by your corporate proxy server", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "The EC2 instance does not have a route to an Internet Gateway.", "IsAnswer": false },
-            { "Id": 1057, "QuestionId": 1010, "Name": "The EC2 instance's security group does not support ingress to port 3389.", "IsAnswer": false },
-            { "Id": 1057, "QuestionId": 1010, "Name": "The EC2 instance's security group does not support ingress to port 22", "IsAnswer": true }]
-        
+        "Id": 31,
+        "Name": "Per the AWS Acceptable Use Policy, penetration testing of EC2 instances:", 
+       "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "may be performed by the customer against their own instances, only if performed from EC2 instances.", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "may be performed by AWS, and is periodically performed by AWS.", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "may be performed by AWS, and will be performed by AWS upon customer request. ", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "are expressly prohibited under all circumstances.", "IsAnswer": false },
+            { "Id": 1059, "QuestionId": 1010, "Name": "may be performed by the customer against their own instances with prior authorization from AWS", "IsAnswer": true }]
     },
     {
-      "Id": 32,
-      "Name": "S3 supports which of the following object encryption?",  
-        "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "Server-Side Encryption with Amazon Managed Keys (SSE-S3, SSE-KMS)", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "Server-Side Encryption with Customer-Provided Keys (SSE-C)", "IsAnswer": false },
-            { "Id": 1057, "QuestionId": 1010, "Name": "Client-Side Encryption with WS KMS-managed customer master key", "IsAnswer": false },
-            { "Id": 1057, "QuestionId": 1010, "Name": "Client-Side Encryption with client side master key", "IsAnswer": false },
-            { "Id": 1057, "QuestionId": 1010, "Name": "All of the above", "IsAnswer": true }]
-        
+        "Id": 32,
+        "Name": "When working with Amazon RDS, by default AWS is responsible for implementing which two management-related activities? (Pick 2 correct answers)", 
+       "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Importing data and optimizing queries ", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Installing and periodically patching the database software ", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Creating and maintaining automated database backups with a point-in-time recovery of up to five minutes", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Creating and maintaining automated database backups in compliance with regulatory long-term retention requirements", "IsAnswer": true }]
     },
     {
-      "Id": 33,
-      "Name": "With regard to AWS RDS which of the following is true?",  
-        "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "MySQL, Postgres, and DB2 are supported", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "RDS can be deployed within a VPC", "IsAnswer": true },
-            { "Id": 1057, "QuestionId": 1010, "Name": "RDS features are identical across database types", "IsAnswer": false },
-            { "Id": 1057, "QuestionId": 1010, "Name": "Aurora is no longer supported by Amazon", "IsAnswer": false }]
-        
+        "Id": 33,
+        "Name": "You maintain an application on AWS to provide development and test platforms for your developers. Currently both environments consist of an m1.small EC2 instance. Your developers notice performance degradation as they increase network load in the test environment. How would you mitigate these performance issues in the test environment?", 
+       "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Upgrade the m1.small to a larger instance type ", "IsAnswer": true },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Add an additional ENI to the test instance ", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Use the EBS optimized option to offload EBS traffic ", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Configure Amazon Cloudwatch to provision more network bandwidth when network utilization exceeds 80% ", "IsAnswer": false }]
     },
     {
-      "Id": 34,
-      "Name": "What HTTP response code indicates a client side error when a REST call is made?",  
-        "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "2xx", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "3xx", "IsAnswer": false },
-            { "Id": 1057, "QuestionId": 1010, "Name": "4xx", "IsAnswer": true },
-            { "Id": 1057, "QuestionId": 1010, "Name": "500", "IsAnswer": false }]
-        
+        "Id": 34,
+        "Name": "You have been tasked with identifying an appropriate storage solution for a NoSQL database that requires random I/O reads of greater than 100,000 4kB IOPS. Which EC2 option will meet this requirement?", 
+       "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "EBS provisioned IOPS ", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "SSD instance store ", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "EBS optimized instances", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "High Storage instance configured in RAID 10 ", "IsAnswer": true }]
     },
     {
-      "Id": 35,
-      "Name": "What is not a valid section in a CloudFormation template?",  
-        "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "Parameters", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "Resources", "IsAnswer": false },
-            { "Id": 1057, "QuestionId": 1010, "Name": "Declarations", "IsAnswer": true },
-            { "Id": 1057, "QuestionId": 1010, "Name": "Outputs", "IsAnswer": false }]
-        
+        "Id": 35,
+        "Name": "Instance A and instance B are running in two different subnets A and B of a VPC. Instance A is not able to ping instance B. What are two possible reasons for this? (Pick 2 correct answers)", 
+       "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "The routing table of subnet A has no target route to subnet B", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "The security group attached to instance B does not allow inbound ICMP traffic ", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "The policy linked to the IAM role on instance A is not configured correctly ", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "The NACL on subnet B does not allow outbound ICMP traffic", "IsAnswer": true }]
     },
     {
-      "Id": 36,
-      "Name": "In the shared-responsibility model, what is Amazon's responsibility?",  
-        "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "Managing security groups", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "Managing customer's key pairs for EC2 instances.", "IsAnswer": false },
-            { "Id": 1057, "QuestionId": 1010, "Name": "Physical security of data centers.", "IsAnswer": true },
-            { "Id": 1057, "QuestionId": 1010, "Name": "IAM roles", "IsAnswer": false }]
-        
+        "Id": 36,
+        "Name": "Which features can be used to restrict access to data in S3? (Pick 2 correct answers)", 
+       "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Create a CloudFront distribution for the bucket. ", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Set an S3 bucket policy. ", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Use S3 Virtual Hosting. ", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Set an S3 ACL on the bucket or the object. ", "IsAnswer": true },
+            { "Id": 1059, "QuestionId": 1010, "Name": "Enable IAM Identity Federation. ", "IsAnswer": false }]
     },
     {
         "Id": 37,
-        "Name": " You have an application that requires to read 5 items of 10 KB each per second. How many units of read capacity should you set if you desire strongly consistent reads?", 
-
-        "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "13 capacity units ", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "8 capacity units  ", "IsAnswer": false },
-            { "Id": 1057, "QuestionId": 1010, "Name": "10 capacity units", "IsAnswer": false },
-            { "Id": 1058, "QuestionId": 1010, "Name": "15 capacity units ", "IsAnswer": true }]
-
+        "Name": "You need to establish a backup and archiving strategy for your company using AWS. Documents should be immediately accessible for 3 months and available for 5 years for compliance reasons. Which AWS service fulfills these requirements in the most cost effective way?", 
+       "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Use StorageGateway to store data to S3 and use life-cycle policies to move the data into Redshift for long-time archiving", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Use DirectConnect to upload data to S3 and use IAM policies to move the data into Glacier for longtime archiving", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Upload the data on EBS, use life-cycle policies to move EBS snapshots into S3 and later into Glacier for long-time archiving ", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Upload data to S3 and use life-cycle policies to move the data into Glacier for long-time archiving", "IsAnswer": true }]
     },
-     {
+    {
         "Id": 38,
-        "Name": " In DynamoDB each table can have ________ local indexes and _______ global indexes:", 
-
-        "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "5, 10 ", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "5, 5 ", "IsAnswer": true },
-            { "Id": 1057, "QuestionId": 1010, "Name": "10, 5", "IsAnswer": false },
-            { "Id": 1058, "QuestionId": 1010, "Name": "10, 10 ", "IsAnswer": false }]
-
+        "Name": "Your web application is using Auto Scaling and Elastic Load Balancing. You want to monitor the application to ensure that it maintains a good quality of service for your customers, defined by the applicationˈs page load time. What metric in Amazon CloudWatch can best be used for this?", 
+       "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Latency reported by the elastic load balancer (ELB)", "IsAnswer": true },
+            { "Id": 1056, "QuestionId": 1010, "Name": "RequestCount reported by the ELB", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Aggregate NetworkIn for the web tier", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Aggregate CPUUtilization for the web tier", "IsAnswer": false }]
     },
-     {
+    {
         "Id": 39,
-        "Name": " Both the Hash and Hash & Range attributes of the primary key in DynamoDB are _______ long.", 
-
-        "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "256 KB ", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "64 KB  ", "IsAnswer": true },
-            { "Id": 1057, "QuestionId": 1010, "Name": "10 bytes", "IsAnswer": false },
-            { "Id": 1058, "QuestionId": 1010, "Name": "1 KB ", "IsAnswer": false }]
-
+        "Name": "You have an Amazon VPC with one private subnet and one public subnet with a Network Address Translator (NAT) server. You are creating a group of Amazon Elastic Cloud Compute (EC2) instances that configure themselves at startup via downloading a bootstrapping script from Amazon Simple Storage Service (S3) that deploys an application via GIT. Which setup provides the highest level of security?", 
+       "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Amazon EC2 instances in private subnet, no EIPs, route outgoing traffic via the NAT", "IsAnswer": true },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Amazon EC2 instances in public subnet , no EIPs, route outgoing traffic via the Internet Gateway (IGW)", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Amazon EC2 instances in private subnet, assign EIPs, route outgoing traffic via the Internet Gateway (IGW)", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Amazon EC2 instances in public subnet, assign EIPs, route outgoing traffic via the NAT", "IsAnswer": false }]
     },
-     {
+    {
         "Id": 40,
-        "Name": "To have reliable snapshots what storage engine must MySQL tables be configured with:", 
-
-        "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "DynamoDB", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "MongoDB", "IsAnswer": false },
-            { "Id": 1057, "QuestionId": 1010, "Name": "InnoDB", "IsAnswer": true },
-            { "Id": 1058, "QuestionId": 1010, "Name": "CouchDB ", "IsAnswer": false }]
-
+        "Name": "You manage your companyˈs VPC in an AWS region and give other teams access to create instances and modify security groups inside subnets dedicated to their teams. You need to make sure the development team canˈt do anything in their subnets that could allow their instances to impact the production environment instances in the production subnets. How can you separate parts of your VPC so the instances for development canˈt interfere with the ones from production?", 
+       "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Make sure the subnets only allow routing via an IGW and not the local router.", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Set up NACLs that restrict what subnets can talk to each other.", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Put the two subnets into CIDR blocks that are very far apart.", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Make sure the development subnets are in one Availability Zone and the production is in another", "IsAnswer": false }]
     },
     {
         "Id": 41,
-        "Name": "Does S3 provide read-after-write consistency?", 
-
-        "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "No, not for any region", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "Yes, but only for certain regions", "IsAnswer": false },
-            { "Id": 1057, "QuestionId": 1010, "Name": "Yes, but only for certain regions (excluding us-east) and for new objects", "IsAnswer": true },
-            { "Id": 1058, "QuestionId": 1010, "Name": "Yes, for all regions", "IsAnswer": false }]
-
+        "Name": "Which of the following is an example of a good Amazon DynamoDB hash key schema for provisioned throughput efficiency?", 
+       "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Student ID, where every student has a unique identification number", "IsAnswer": true },
+            { "Id": 1056, "QuestionId": 1010, "Name": "College ID, where there are two colleges in the university", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Class ID, where every student is in one of four classes", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Tuition Plan, where the vast majority of students are in-state and the rest are out-of-state", "IsAnswer": false }]
     },
     {
         "Id": 42,
-       "Name": "What is the maximum size of a single S3 object?", 
-        
-        "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "No such limit", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "5 TB", "IsAnswer": true },
-            { "Id": 1057, "QuestionId": 1010, "Name": "5 GB", "IsAnswer": false },
-            { "Id": 1058, "QuestionId": 1010, "Name": "100 GB", "IsAnswer": false }]
-        
+        "Name": "A customer needs corporate IT governance and cost oversight of all AWS resources consumed by its divisions. The divisions want to maintain administrative control of the discrete AWS resources they consume and keep those resources separate from the resources of other divisions. Which of the following options, when used together will support the autonomy/control of divisions while enabling corporate IT to maintain governance and cost oversight? Choose 2 answers:", 
+       "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Use AWS Consolidated Billing and disable AWS root account access for the child accounts.", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Enable IAM cross-account access for all corporate IT administrators in each child account.", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Create separate VPCs for each division within the corporate IT AWS account.", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Use AWS Consolidated Billing to link the divisions' accounts to a parent corporate account.", "IsAnswer": true },
+            { "Id": 1059, "QuestionId": 1010, "Name": "Write all child AWS CloudTrail and Amazon CloudWatch logs to each child account's Amazon S3 'Log' bucket.", "IsAnswer": true }]
     },
-   {
+    {
         "Id": 43,
-       "Name": "Is data stored in S3 is always encrypted?", 
-
-        "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "Yes, S3 always encrypts data for security", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "No, there is no such feature", "IsAnswer": false },
-            { "Id": 1057, "QuestionId": 1010, "Name": "Yes, but only when right APIs are called", "IsAnswer": true },
-            { "Id": 1058, "QuestionId": 1010, "Name": "Yes, but only in Gov Cloud datacenters", "IsAnswer": false }]
-
+        "Name": "A customer wants to leverage Amazon Simple Storage Service (S3) and Amazon Glacier as part of their backup and archive infrastructure. The customer plans to use third-party software to support this integration. Which approach will limit the access of the third party software to only the Amazon S3 bucket named 'thirdparty-backup'?", 
+       "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "A custom bucket policy limited to the Amazon S3 API in the Amazon Glacier archive 'thirdparty-backup'", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "A custom bucket policy limited to the Amazon S3 API in 'thirdparty-backup'", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "A custom IAM user policy limited to the Amazon S3 API for the Amazon Glacier archive 'thirdparty-backup'", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "A custom IAM user policy limited to the Amazon S3 API in 'thirdparty-backup'", "IsAnswer": true }]
     },
-     {
+    {
         "Id": 44,
-      "Name": "What is true for S3 buckets (select multiple if more than one is true)?", 
-        "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "Bucket namespace is shared and is global among all AWS users.", "IsAnswer": true },
-            { "Id": 1056, "QuestionId": 1010, "Name": "Bucket names can contain alpha numeric characters", "IsAnswer": true },
-            { "Id": 1057, "QuestionId": 1010, "Name": "Bucket are associated with a region, and all data in a bucket resides in that region", "IsAnswer": true },
-            { "Id": 1058, "QuestionId": 1010, "Name": "Buckets can be transferred from one account to another through API", "IsAnswer": false }]
-
+        "Name": "A comp. has a workflow that sends video files from their on-premise system to AWS for transcoding.They use EC2 worker that pull transcoding jobs from SQS. Why is SQS an appropriate service for this scenario.", 
+       "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "SQS guarantees the order of the messages.", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "SQS synchronously provides transcoding output.", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "SQS checks the health of the worker instances.", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "SQS helps to facilitate horizontal scaling of encoding tasks.", "IsAnswer": true }]
     },
-     {
+    {
         "Id": 45,
-       "Name": "EBS can always tolerate an Availability Zone failure?", 
-        "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "No, all EBS volume is stored in a single Availability Zone", "IsAnswer": true },
-            { "Id": 1056, "QuestionId": 1010, "Name": "Yes, EBS volume has multiple copies so it should be fine", "IsAnswer": false },
-            { "Id": 1057, "QuestionId": 1010, "Name": "Depends on how it is setup", "IsAnswer": false },
-            { "Id": 1058, "QuestionId": 1010, "Name": "Depends on the Region where EBS volume is initiated", "IsAnswer": false }]
-
+        "Name": "As your web application has increased in popularity, reports of performance issues have grown. The current configuration initiates scaling actions based on Average CPU utilization; however during reports of slowness, CloudWatch graphs have shown that average CPU utilization remains steady at 30%. This is well below the alarm threshold of 55%. Your developers have discovered that performance degradation occurs on an instance when it is processing more than 300 threads and that this is due to the special way the application is programmed. What is the best way to ensure that your application scales to match demand?", 
+       "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Launch 3 to 7 additional instances outside of the autoscaling group to handle the additional load", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Empirically determine the expected CPU use for 300 concurrent sessions and adjust the CloudWatch alarm threshold to be that CPU use.", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Populate a custom CloudWatch metric for concurrent sessions and initiate scaling actions based on that metric instead of on CPU use.", "IsAnswer": true },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Add a script to each instance to detect the number of concurrent sessions. If the number of sessions remains over 300 for five minutes, have the instance increase the desired capacity of the AutoScaling group by one.", "IsAnswer": false }]
     },
-     {
+    {
         "Id": 46,
-       "Name": "Which of the following benefits does adding Multi-AZ deployment in RDS provide (choose multiple if more than one is true)?", 
-        "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "MultiAZ deployed database can tolerate an Availability Zone failure", "IsAnswer": true },
-            { "Id": 1056, "QuestionId": 1010, "Name": "Decrease latencies if app servers accessing database are in multiple Availability zones", "IsAnswer": false },
-            { "Id": 1057, "QuestionId": 1010, "Name": "Make database access times faster for all app servers", "IsAnswer": false },
-            { "Id": 1058, "QuestionId": 1010, "Name": "Make database more available during maintenance tasks", "IsAnswer": true }]
-
+        "Name": "You are using ElastiCache to cache your web application. The caching seems be running slower and slower and you want to diagnose the cause of this issue. You are using Memcached as your caching engine. What metric should you use to determine whether or not the amount of memory reserved for Memcached connections and other miscellaneous overhead, does not exceed 50Mb?", 
+       "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Memcached-Memory-Overhead", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Memcached_Connections_Overhead", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Reddis_Connections_Overhead", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Reddis-Memory-Overhead.", "IsAnswer": false }]
     },
-     {
+    {
         "Id": 47,
-       "Name": "Which of the following Auto scaling CANNOT do (select multiple if more than one is true)?", 
-        "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "Start up EC2 instances when CPU utilization is above threshold", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "Release EC2 instances when CPU utilization is below threshold", "IsAnswer": false },
-            { "Id": 1057, "QuestionId": 1010, "Name": "Increase the instance size when utilization is above threshold", "IsAnswer": true },
-            { "Id": 1058, "QuestionId": 1010, "Name": "Add more Relational Database Service (RDS) read replicas when utilization is above threshold", "IsAnswer": true }]
-
+        "Name": "In order to force a failover from one AZ to another using RDS, you should...", 
+       "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Right click on the RDS instance and select 'Force Failover'", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Using the API call 'RDSForceFailover'", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "You can't force a failover. A failover will only occur if something naturally goes wrong with the AWS estate.", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "By manually rebooting your RDS instance.", "IsAnswer": true }]
     },
-     {
+    {
         "Id": 48,
-       "Name": "What happens to data when an EC2 instance terminates (select multiple if more than one is true)?", 
-        "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "For EBS backed AMI, the EBS volume with operation system on it is preserved", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "For EBS backed AMI, any volume attached other than the OS volume is preserved", "IsAnswer": true },
-            { "Id": 1057, "QuestionId": 1010, "Name": "All the snapshots of the EBS volume with operating system is preserved", "IsAnswer": true },
-            { "Id": 1058, "QuestionId": 1010, "Name": "For S3 backed AMI, all the data in the local (ephemeral) hard drive is deleted", "IsAnswer": true }]
-
+        "Name": "In which of the following scenarios should you use a read replica? (Choose 3 answers)", 
+       "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Scale beyond the compute or I/O capacity of a single DB Instance for read-heavy database workloads. This excess read traffic can be directed to one or more Read Replicas.", "IsAnswer": true },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Use read replica to povide greater redundancy via automatic failovers.", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Serve read traffic while the source DB Instance is unavailable. If your source DB Instance cannot take I/O requests (e.g. due to I/O suspension for backups or scheduled maintenance), you can direct read traffic to your Read Replica(s).", "IsAnswer": true },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Business reporting or data warehousing scenarios; you may want business reporting queries to run against a Read Replica, rather than your primary, production DB Instance.", "IsAnswer": true },
+            { "Id": 1059, "QuestionId": 1010, "Name": "With Multi-AZ RDS you automatically get a Read replica to handle excess traffic", "IsAnswer": false }]
     },
-     {
+    {
         "Id": 49,
-       "Name": "For an EC2 instance launched in a private subnet in VPC, which of the following are the options for it to be able to connect to the internet (assume security groups have proper ports open)?", 
-        "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "Simply attach an elastic IP", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "If there is also a public subnet in the same VPC, a ENI (Elastic Network Interface) can be attached to the instance with the ip address range of the public subnet", "IsAnswer": false },
-            { "Id": 1057, "QuestionId": 1010, "Name": "If there is a public subnet in the same VPC with a NAT instance attached to internet gateway, then a route can be configured from the instance to the NAT", "IsAnswer": true },
-            { "Id": 1058, "QuestionId": 1010, "Name": "There is no way for an instance in private subnet to talk to the internet", "IsAnswer": false }]
-
+        "Name": "Which of the following is true?", 
+       "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "You can have read replica's of read replicas.", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Read Replica's can have also have multiple AZ's for redundancy.", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "", "IsAnswer": false }]
     },
-     {
+    {
         "Id": 50,
-       "Name": "When an ELB is setup, what is the best way to route a website’s traffic to it?", 
-        "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "Resolve the ELB name to an ip address  and point the website to that ip address", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "There is no direct way to do so, Route53 has to be used", "IsAnswer": false},
-            { "Id": 1057, "QuestionId": 1010, "Name": "Generate a CNAME record for the website pointing to the DNS name of the ELB", "IsAnswer": true }]
-
+        "Name": "", 
+       "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "", "IsAnswer": false }]
     },
-     {
+    {
         "Id": 51,
-       "Name": "An instance is launched into the public subnet of a VPC. Which of the following must be done in order for it to be accessible from the Internet?", 
-        "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "Attach an Elastic IP to the instance", "IsAnswer": true },
-            { "Id": 1056, "QuestionId": 1010, "Name": "Nothing. The instance is accessible from the Internet", "IsAnswer": false},
-            { "Id": 1057, "QuestionId": 1010, "Name": "Launch a NAT instance and route all traffic to it", "IsAnswer": false},
-            { "Id": 1058, "QuestionId": 1010, "Name": "Make an entry in the route table passing all traffic going outside the VPC to the NAT instance", "IsAnswer": false}]
-
+        "Name": "", 
+       "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "", "IsAnswer": false }]
     },
-     {
+    {
         "Id": 52,
-       "Name": "In VPCs with private and public subnets, database servers should ideally be launched into:", 
-        "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "The public subnet", "IsAnswer": false},
-            { "Id": 1056, "QuestionId": 1010, "Name": "The private subnet", "IsAnswer": true},
-            { "Id": 1057, "QuestionId": 1010, "Name": "Either of them", "IsAnswer": false},
-            { "Id": 1058, "QuestionId": 1010, "Name": "Not recommended, they should ideally be launched outside VPC", "IsAnswer": false}]
-
+        "Name": "", 
+       "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "", "IsAnswer": false }]
     },
-     {
+    {
         "Id": 53,
-       "Name": "An instance is connected to an ENI (Elastic Network Interface) in one subnet. What happens when you attach an ENI of a different subnet to this instance?", 
-        "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "The instance follows the rules of the older subnet", "IsAnswer": false},
-            { "Id": 1056, "QuestionId": 1010, "Name": "The instance follows the rules of both the subnets", "IsAnswer": true},
-            { "Id": 1057, "QuestionId": 1010, "Name": "The instance follows the rules of the newer subnet", "IsAnswer": false},
-            { "Id": 1058, "QuestionId": 1010, "Name": "Not possible cannot be connected to 2 ENIs", "IsAnswer": false}]
-
+        "Name": "", 
+       "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "", "IsAnswer": false }]
     },
-     {
-        "Id":54,
-       "Name": "You want to use Route53 to direct your www sub-domain to an elastic load balancer fronting your web servers. What kind of record set should you create?", 
-        "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "A", "IsAnswer": false},
-            { "Id": 1056, "QuestionId": 1010, "Name": "AAAA", "IsAnswer": false},
-            { "Id": 1057, "QuestionId": 1010, "Name": "NS", "IsAnswer": false},
-            { "Id": 1058, "QuestionId": 1010, "Name": "CNAME", "IsAnswer": true}]
-
+    {
+        "Id": 54,
+        "Name": "", 
+       "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "", "IsAnswer": false }]
     },
-     {
+    {
         "Id": 55,
-       "Name": "You have created 4 weighted resource record sets with weights 1, 2, 3 and 4. the 3rd record set is selected by Route53:", 
-        "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "1/7th of the  time", "IsAnswer": false},
-            { "Id": 1056, "QuestionId": 1010, "Name": "3/10th of the time", "IsAnswer": true},
-            { "Id": 1057, "QuestionId": 1010, "Name": "3/7th of the time", "IsAnswer": false},
-            { "Id": 1058, "QuestionId": 1010, "Name": "1/4th of the time", "IsAnswer": false}]
-
+        "Name": "", 
+       "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "", "IsAnswer": false }]
     },
-     {
-        "Id":56,
-       "Name": "You have created a Route 53 latency record set from your domain to a machine in Hong Kong and a similar record to a machine in Seattle. When a user located in Beijing visits your domain he will be routed to:", 
-        "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "Hong Kong", "IsAnswer": true},
-            { "Id": 1056, "QuestionId": 1010, "Name": "Seattle", "IsAnswer": false},
-            { "Id": 1057, "QuestionId": 1010, "Name": "Depends on the load on each machine", "IsAnswer": false},
-            { "Id": 1058, "QuestionId": 1010, "Name": "Both, because 2 requests are made, 1 to each machine", "IsAnswer": false}]
-
+    {
+        "Id": 56,
+        "Name": "", 
+       "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "", "IsAnswer": false }]
     },
-     {
-        "Id":57,
-       "Name": "Which of the following can be used as an origin server in CloudFront?(Choose 3)", 
-        "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "A webserver running on EC2", "IsAnswer": true},
-            { "Id": 1056, "QuestionId": 1010, "Name": "A webserver running in your own datacenter", "IsAnswer": true},
-            { "Id": 1057, "QuestionId": 1010, "Name": "A RDS instance", "IsAnswer": false},
-            { "Id": 1058, "QuestionId": 1010, "Name": "An Amazon S3 bucket", "IsAnswer": true}]
-
+    {
+        "Id": 57,
+        "Name": "", 
+       "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "", "IsAnswer": false }]
     },
-     {
+    {
         "Id": 58,
-       "Name": "In CloudFront what happens when content is NOT present at an Edge location and a request is made to it?", 
-        "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "An Error 404 not found is returned", "IsAnswer": false},
-            { "Id": 1056, "QuestionId": 1010, "Name": "CloudFront delivers the content directly from the origin server and stores it in the cache of the edge location", "IsAnswer": true},
-            { "Id": 1057, "QuestionId": 1010, "Name": "The request is kept on hold till content is delivered to the edge location", "IsAnswer": false},
-            { "Id": 1058, "QuestionId": 1010, "Name": "The request is routed to the next closest edge location", "IsAnswer": false}]
-
+        "Name": "", 
+       "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "", "IsAnswer": false }]
     },
-     {
+    {
         "Id": 59,
-       "Name": "In CloudFront what happens when content is NOT present at an Edge location and a request is made to it?", 
-        "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "An Error 404 not found is returned", "IsAnswer": false},
-            { "Id": 1056, "QuestionId": 1010, "Name": "CloudFront delivers the content directly from the origin server and stores it in the cache of the edge location", "IsAnswer": true},
-            { "Id": 1057, "QuestionId": 1010, "Name": "The request is kept on hold till content is delivered to the edge location", "IsAnswer": false},
-            { "Id": 1058, "QuestionId": 1010, "Name": "The request is routed to the next closest edge location", "IsAnswer": false}]
-
+        "Name": "", 
+       "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "", "IsAnswer": false }]
     },
-     {
+    {
         "Id": 60,
-       "Name": "Which of the following is true with respect to serving private content through CloudFront? (More than 1 correct answer)", 
-        "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "Signed URLs can be created to access objects from CloudFront edge locations", "IsAnswer": true},
-            { "Id": 1056, "QuestionId": 1010, "Name": "Direct access to S3 URLs can be removed therefore allowing access only through CloudFront URLs", "IsAnswer": true},
-            { "Id": 1057, "QuestionId": 1010, "Name": "Mark the S3 bucket private and allow access to CloudFront by means of Roles", "IsAnswer": false},
-            { "Id": 1058, "QuestionId": 1010, "Name": "Mark the S3 bucket private and and create an Origin Access Identity to access the objects", "IsAnswer": true}]
-
-    },
-     {
-        "Id": 61,
-       "Name": "You have written a CloudFormation template that creates 1 elastic load balancer fronting 2 EC2 instances. Which section of the template should you edit so that the DNS of the load balancer is returned upon creation of the stack.", 
-        "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "Resources", "IsAnswer": false},
-            { "Id": 1056, "QuestionId": 1010, "Name": "Parameters", "IsAnswer": false},
-            { "Id": 1057, "QuestionId": 1010, "Name": "Outputs", "IsAnswer": true},
-            { "Id": 1058, "QuestionId": 1010, "Name": "Mappings", "IsAnswer": false}]
-
+        "Name": "", 
+       "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "", "IsAnswer": false }]
     }
     ]
 }

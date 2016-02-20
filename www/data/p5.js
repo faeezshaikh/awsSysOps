@@ -1,7 +1,7 @@
 {
     "quiz": {
         "Id": 5,
-        "name": "S3 Quiz",
+        "name": "Practice Quiz 5",
         "logo" : "data/img/S3.png"
     },
     "questions": [{
@@ -17,11 +17,13 @@
     },
     {
         "Id": 2,
-        "Name": "S3 offers 2 types of storage classes: Standard and Standard-Infrequent Access only.", 
+        "Name": "A user is trying to setup a security policy for ELB. The user wants ELB to meet the cipher supported by the client by configuring the server order preference in ELB security policy. Which of the below mentioned preconfigured policies supports this feature?", 
         
         "Options": [
-             { "Id": 1055, "QuestionId": 1010, "Name": "True", "IsAnswer": false },
-             { "Id": 1056, "QuestionId": 1010, "Name": "False", "IsAnswer": true }]
+             { "Id": 1055, "QuestionId": 1010, "Name": "ELBSecurity Policy-2014-01", "IsAnswer": true },
+             { "Id": 1056, "QuestionId": 1010, "Name": "ELBSecurity Policy-2011-08", "IsAnswer": false },
+             { "Id": 1057, "QuestionId": 1010, "Name": "ELBDefault Negotiation Policy", "IsAnswer": false },
+             { "Id": 1058, "QuestionId": 1010, "Name": "ELBSample- OpenSSLDefault Cipher Policy", "IsAnswer": false }]
         
     },
     {
@@ -35,7 +37,7 @@
     },
     {
         "Id": 4,
-        "Name": "Objects smaller than 128KB will incur charges for Standard-IA storage class:", 
+        "Name": "Objects smaller than 128KB will incur charges for S3-IA storage class:", 
         
         "Options": [
             { "Id": 1055, "QuestionId": 1010, "Name": "True", "IsAnswer": true },
@@ -43,21 +45,23 @@
     },
     {
         "Id": 5,
-        "Name": "The largest object that can be uploaded in a single PUT is ________", 
+        "Name": "A user is using the AWS EC2. The user wants to make so that when there is an issue in the EC2 server, such as instance status failed, it should start a new instance in the user’s private cloud. Which AWS service helps to achieve this automation?", 
         
         "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "10 MB", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "5 GB", "IsAnswer": true },
-            { "Id": 1057, "QuestionId": 1010, "Name": "1 TB", "IsAnswer": false },
-            { "Id": 1058, "QuestionId": 1010, "Name": "100 MB", "IsAnswer": false }]
+            { "Id": 1055, "QuestionId": 1010, "Name": "AWS CloudWatch + Cloudformation", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "AWS CloudWatch + AWS AutoScaling + AWS ELB", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "AWS CloudWatch + AWS VPC", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "AWS CloudWatch + AWS SNS", "IsAnswer": false }]
     },
     {
         "Id": 6,
-        "Name": "Amazon recommends that for objects larger than 100 megabytes, customers should consider using the Multipart Upload capability.", 
+        "Name": "A user is trying to connect to a running EC2 instance using SSH. However, the user gets a connection time out error. Which of the below mentioned options is not a possible reason for rejection?", 
         
         "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "True", "IsAnswer": true },
-            { "Id": 1057, "QuestionId": 1010, "Name": "False", "IsAnswer": false }]
+            { "Id": 1055, "QuestionId": 1010, "Name": "The access key to connect to the instance is wrong", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "The security group is not configured properly", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "The private key used to launch the instance is not correct", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "The instance CPU is heavily loaded", "IsAnswer": true }]
         
     },
     {
@@ -67,8 +71,8 @@
       "Options": [
             { "Id": 1055, "QuestionId": 1010, "Name": "1 bytes to 5 GB", "IsAnswer": false },
             { "Id": 1056, "QuestionId": 1010, "Name": "100 Kb to 10 GB", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "1 byte to 5 Terabytes", "IsAnswer": true },
-            { "Id": 1056, "QuestionId": 1010, "Name": "0 to 5 TB", "IsAnswer": false }]
+            { "Id": 1056, "QuestionId": 1010, "Name": "0 byte to 5 Terabytes", "IsAnswer": true },
+            { "Id": 1056, "QuestionId": 1010, "Name": "1 byte to 5 TB", "IsAnswer": false }]
         
     },
     {
@@ -93,10 +97,12 @@
     },
     {
         "Id": 10,
-        "Name": "In S3 you enable and disable versioning at any time.", 
+        "Name": "A user has configured ELB with three instances. The user wants to achieve High Availability as well as redundancy with ELB. Which of the below mentioned AWS services helps the user achieve this for ELB?", 
        "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "True", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "False. Once enabled you can only suspend", "IsAnswer": true }]
+            { "Id": 1055, "QuestionId": 1010, "Name": "Route 53", "IsAnswer": true },
+            { "Id": 1056, "QuestionId": 1010, "Name": "AWS Mechanical Turk", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Auto Scaling", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "AWS EMR", "IsAnswer": false }]
     }
      ]
 }

@@ -44,25 +44,22 @@ angular.module('starter')
 
 .service('awsService',function(localStorageService){
  var topics = [
-                { title: 'Route53', desc:'Domain Name System', id: 1 ,url:'data/img/Route53.png'},
-                { title: 'RDS', desc:'Relational Database Service', id: 2 ,url:'data/img/RDS.png'},
-                { title: 'IAM', desc:'Identity and Access Management', id: 3 ,url:'data/img/IAM.png'},
-                { title: 'EC2', desc:'Elastic Compute Cloud', id: 4 ,url:'data/img/EC2.png'},
-                { title: 'S3',desc:'Simple Storage Service',  id: 5 ,url:'data/img/S3.png'},
-                { title: 'VPC', desc:'Subnets, NACLs, Gateways, IPs', id: 6 ,url:'data/img/VPC.png'},
-                { title: 'Elastic Beanstalk', desc:'Easy to begin, Impossible to outgrow', id: 7 ,url:'data/img/ElasticBeanstalk.png'},
-                { title: 'SQS',desc:'Simpe Queue Service',  id: 8 ,url:'data/img/SQS.png'},
-                { title: 'SNS',desc:'Push Notification Service',  id: 9 ,url:'data/img/SNS.png'},
-                { title: 'SWF', desc:'Simple Workflow Service', id: 10 ,url:'data/img/SWF.png'},
-                { title: 'DynamoDB', desc:'Amazons NoSQL Database', id: 11 ,url:'data/img/DynamoDB.png'},
-                { title: 'CloudFormation', desc:'Templates and Stacks', id: 12 ,url:'data/img/CloudFormation.png'}
+                { title: 'Practice Set 1', desc:'Domain Name System', id: 1 ,url:'data/img/Route53.png'},
+                { title: 'Practice Set 2', desc:'Relational Database Service', id: 2 ,url:'data/img/RDS.png'},
+                { title: 'Practice Set 3', desc:'Identity and Access Management', id: 3 ,url:'data/img/IAM.png'},
+                { title: 'Practice Set 4', desc:'Elastic Compute Cloud', id: 4 ,url:'data/img/EC2.png'},
+                { title: 'Practice Set 5',desc:'Simple Storage Service',  id: 5 ,url:'data/img/S3.png'},
+                { title: 'Practice Set 6', desc:'Subnets, NACLs, Gateways, IPs', id: 6 ,url:'data/img/VPC.png'},
+                { title: 'Practice Set 7', desc:'Easy to begin, Impossible to outgrow', id: 7 ,url:'data/img/ElasticBeanstalk.png'},
+                { title: 'Practice Set 8',desc:'Simpe Queue Service',  id: 8 ,url:'data/img/SQS.png'},
+                { title: 'Practice Set 9',desc:'Push Notification Service',  id: 9 ,url:'data/img/SNS.png'},
+                { title: 'Practice Set 10', desc:'Simple Workflow Service', id: 10 ,url:'data/img/SWF.png'}
               ];
 
     var mockExams = [
-                { title: 'Mini-Exam', id: 400 ,url:'data/img/exam.jpg'},
-                { title: 'Practice Exam 1', id: 100 ,url:'data/img/exam.jpg'},
-                { title: 'Practice Exam 2', id: 200 ,url:'data/img/exam.jpg'},
-                { title: 'Certification', id: 300 ,url:'data/img/certified.png'}
+                { title: 'Certification Exam 1', id: 400 ,url:'data/img/certified.png'},
+                { title: 'Certification Exam 2', id: 100 ,url:'data/img/certified.png'},
+                { title: 'Certification Exam 3', id: 300 ,url:'data/img/certified.png'}
                
               ];
 

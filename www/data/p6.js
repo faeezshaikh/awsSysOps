@@ -1,7 +1,7 @@
 {
     "quiz": {
         "Id": 6,
-        "name": "VPC Quiz",
+        "name": "Practice Quiz 6",
         "logo" : "data/img/VPC.png"
     },
     "questions": [{
@@ -24,10 +24,12 @@
     },
     {
         "Id": 3,
-        "Name": "Amazon reserves the first four (4) IP addresses and the last one (1) IP address of every subnet for IP networking purposes. ", 
+        "Name": "For IP Networking Purposes, Amazon reserves these in evey subnet. (Choose 2 answers)", 
         "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "True", "IsAnswer": true },
-            { "Id": 1056, "QuestionId": 1010, "Name": "False", "IsAnswer": false }]
+            { "Id": 1055, "QuestionId": 1010, "Name": "First Four IP addresses", "IsAnswer": true },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Last Two IP addresses", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Last One IP address", "IsAnswer": true },
+            { "Id": 1058, "QuestionId": 1010, "Name": "First Five IP addresses", "IsAnswer": false }]
         
     },
     {
@@ -58,22 +60,22 @@
     },
     {
         "Id": 7,
-        "Name": "To connect your VPC to the internet you would use:", 
+        "Name": "A user has created a VPC with CIDR 20.0.0.0/16 using the wizard. The user has created a public subnet CIDR 20.0.0.0/24. and VPN only subnets CIDR 20.0.1.0/24. along with the VPN gateway vgw-12345  to connect to the user’s data centre. Which of the below mentioned options is a valid entry for the main route table in this scenario?", 
         
       "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "Other VPCs", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "Virtual Private Gateway", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "Internet Gateway", "IsAnswer": true },
-            { "Id": 1056, "QuestionId": 1010, "Name": "A Router", "IsAnswer": false }]
+            { "Id": 1055, "QuestionId": 1010, "Name": "Destination: 20.0.0.0/24 and Target: vgw-12345", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Destination: 20.0.0.0/16 and Target: ALL", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Destination: 20.0.1.0/16 and Target: vgw-12345", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Destination: 0.0.0.0/0 and Target: vgw-12345", "IsAnswer": true }]
         
     },
     {
         "Id": 8,
-        "Name": "Which of this is not an option when configuring a VPC:", 
+        "Name": "Which of this is not an option when configuring a VPC using the wizard:", 
         
         "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "VPC with a Single Public Subnet Only", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "VPC with Multiple Prublic Sunets only", "IsAnswer": true},
+            { "Id": 1055, "QuestionId": 1010, "Name": "VPC with a Single Public Subnet only", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "VPC with Multiple Public Sunets only", "IsAnswer": true},
             { "Id": 1057, "QuestionId": 1010, "Name": "VPC with Public and Private Subnets", "IsAnswer": false},
             { "Id": 1058, "QuestionId": 1010, "Name": "VPC with Public and Private Subnets and Hardware VPN Access", "IsAnswer": false},
             { "Id": 1059, "QuestionId": 1010, "Name": "VPC with a Private Subnet Only and Hardware VPN Access", "IsAnswer": false}]
