@@ -80,13 +80,13 @@
     },
      {
         "Id": 8,
-       "Name": "A two-tiered web app is running on 3 EC2 instances, an Elastic Load Balancer and one MySQL RDS instance. With growing load, the database queries are taking too long and slowing down the overall response time. Which of the following can be used to speed up performance. (Choose 3 answers)", 
+       "Name": "You have an RDS instance that because of extra load is failing to meet with the performance SLAs. What two options are best to increase performance.", 
         "Options": [
-             { "Id": 1055, "QuestionId": 1010, "Name": "Create RDS read replica and redirect half of the database read requests to it.", "IsAnswer": true },
-             { "Id": 1056, "QuestionId": 1010, "Name": "Cache database queries in Elasticache.", "IsAnswer": true },
-             { "Id": 1057, "QuestionId": 1010, "Name": "Setup RDS in Multi-AZ mode.", "IsAnswer": false },
-             { "Id": 1058, "QuestionId": 1010, "Name": "Shard the database and distribute load between shards.", "IsAnswer": true },
-             { "Id": 1059, "QuestionId": 1010, "Name": "Use Amazon Cloudfront to cache database queries", "IsAnswer": false }]
+             { "Id": 1055, "QuestionId": 1010, "Name": "Increase the size of the RDS instance ", "IsAnswer": true },
+             { "Id": 1056, "QuestionId": 1010, "Name": "Enable multiple AZ ", "IsAnswer": false },
+             { "Id": 1057, "QuestionId": 1010, "Name": "Add Read Replicas.", "IsAnswer": true },
+             { "Id": 1058, "QuestionId": 1010, "Name": "Decrease the size of the RDS instance", "IsAnswer": false },
+             { "Id": 1059, "QuestionId": 1010, "Name": "Create a standby RDS instance", "IsAnswer": false }]
 
     },
     {
@@ -429,7 +429,7 @@
           "Options": [
               { "Id": 1055, "QuestionId": 1010, "Name": "No, not for any region", "IsAnswer": false },
               { "Id": 1056, "QuestionId": 1010, "Name": "Yes, but only for certain regions", "IsAnswer": false },
-              { "Id": 1057, "QuestionId": 1010, "Name": "Yes, but only for certain regions (excluding us-east) and for new objects", "IsAnswer": true },
+              { "Id": 1057, "QuestionId": 1010, "Name": "Yes, but only for certain regions and for new objects", "IsAnswer": true },
               { "Id": 1058, "QuestionId": 1010, "Name": "Yes, for all regions", "IsAnswer": false }]
 
       },
@@ -469,7 +469,7 @@
           "Id": 45,
          "Name": "EBS can always tolerate an Availability Zone failure?", 
           "Options": [
-              { "Id": 1055, "QuestionId": 1010, "Name": "No, all EBS volume is stored in a single Availability Zone", "IsAnswer": true },
+              { "Id": 1055, "QuestionId": 1010, "Name": "No, all EBS volumes are stored in a single Availability Zone", "IsAnswer": true },
               { "Id": 1056, "QuestionId": 1010, "Name": "Yes, EBS volume has multiple copies so it should be fine", "IsAnswer": false },
               { "Id": 1057, "QuestionId": 1010, "Name": "Depends on how it is setup", "IsAnswer": false },
               { "Id": 1058, "QuestionId": 1010, "Name": "Depends on the Region where EBS volume is initiated", "IsAnswer": false }]
@@ -606,32 +606,22 @@
       },
        {
           "Id": 59,
-         "Name": "In CloudFront what happens when content is NOT present at an Edge location and a request is made to it?", 
+         "Name": "What happens when RDS fails over from one availability zone to another?", 
           "Options": [
-              { "Id": 1055, "QuestionId": 1010, "Name": "An Error 404 not found is returned", "IsAnswer": false},
-              { "Id": 1056, "QuestionId": 1010, "Name": "CloudFront delivers the content directly from the origin server and stores it in the cache of the edge location", "IsAnswer": true},
-              { "Id": 1057, "QuestionId": 1010, "Name": "The request is kept on hold till content is delivered to the edge location", "IsAnswer": false},
-              { "Id": 1058, "QuestionId": 1010, "Name": "The request is routed to the next closest edge location", "IsAnswer": false}]
+              { "Id": 1055, "QuestionId": 1010, "Name": "You need to update the connection string in your application to point to the new RDS IP address.", "IsAnswer": false},
+              { "Id": 1056, "QuestionId": 1010, "Name": "Failover is handled by AWS and the the failover mechanism automatically changes the DNS record of the DB instance to point to the standby DB instance.", "IsAnswer": true},
+              { "Id": 1057, "QuestionId": 1010, "Name": "Your application that is hosted on EC2 instances will failover automatically to the same AZ that your RDS instances have failed over to, so you do not need to do anything.", "IsAnswer": false},
+              { "Id": 1058, "QuestionId": 1010, "Name": "You need to contact AWS for advice as to how to set up your application in the new failed over availability zone.", "IsAnswer": false}]
 
       },
        {
           "Id": 60,
-         "Name": "Which of the following is true with respect to serving private content through CloudFront? (More than 1 correct answer)", 
+         "Name": "Which of the following is true with respect to serving private content through CloudFront? (Ony one incorrect answer)", 
           "Options": [
               { "Id": 1055, "QuestionId": 1010, "Name": "Signed URLs can be created to access objects from CloudFront edge locations", "IsAnswer": true},
               { "Id": 1056, "QuestionId": 1010, "Name": "Direct access to S3 URLs can be removed therefore allowing access only through CloudFront URLs", "IsAnswer": true},
               { "Id": 1057, "QuestionId": 1010, "Name": "Mark the S3 bucket private and allow access to CloudFront by means of Roles", "IsAnswer": false},
               { "Id": 1058, "QuestionId": 1010, "Name": "Mark the S3 bucket private and and create an Origin Access Identity to access the objects", "IsAnswer": true}]
-
-      },
-       {
-          "Id": 61,
-         "Name": "You have written a CloudFormation template that creates 1 elastic load balancer fronting 2 EC2 instances. Which section of the template should you edit so that the DNS of the load balancer is returned upon creation of the stack.", 
-          "Options": [
-              { "Id": 1055, "QuestionId": 1010, "Name": "Resources", "IsAnswer": false},
-              { "Id": 1056, "QuestionId": 1010, "Name": "Parameters", "IsAnswer": false},
-              { "Id": 1057, "QuestionId": 1010, "Name": "Outputs", "IsAnswer": true},
-              { "Id": 1058, "QuestionId": 1010, "Name": "Mappings", "IsAnswer": false}]
 
       }
      ]

@@ -56,14 +56,13 @@
         
     },
     {
-        "Id": 1015,
-               "Name": "You have been tasked with identifying an appropriate storage solution for a NoSQL database that requires random I/O reads of greater than 100,000 4kB IOPS. Which EC2 option will meet this requirement?",  
-        "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "EBS provisioned IOPS", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "SSD instance store", "IsAnswer": false },
+        "Id": 34,
+        "Name": "You have been tasked with identifying an appropriate storage solution for a NoSQL database that requires random I/O reads of greater than 100,000 4kB IOPS. Which EC2 option will meet this requirement?", 
+       "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "EBS provisioned IOPS ", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "SSD instance store ", "IsAnswer": false },
             { "Id": 1057, "QuestionId": 1010, "Name": "EBS optimized instances", "IsAnswer": false },
-            { "Id": 1058, "QuestionId": 1010, "Name": "High Storage instance configured in RAID 10", "IsAnswer": true }]
-        
+            { "Id": 1058, "QuestionId": 1010, "Name": "High Storage instance configured in RAID 10 ", "IsAnswer": true }]
     },
     {
         "Id": 1016,
@@ -89,11 +88,11 @@
     },
     {
         "Id": 1018,
-              "Name": "What is the limit on the number of domains you can manage using Route53?",  
+              "Name": "What is the limit on the number of hosted zones you can manage using Route53?",  
         "Options": [
             { "Id": 1055, "QuestionId": 1010, "Name": "10", "IsAnswer": false },
             { "Id": 1057, "QuestionId": 1010, "Name": "100", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "50", "IsAnswer": true },
+            { "Id": 1056, "QuestionId": 1010, "Name": "500", "IsAnswer": true },
             { "Id": 1058, "QuestionId": 1010, "Name": "20", "IsAnswer": false }]
         
     },

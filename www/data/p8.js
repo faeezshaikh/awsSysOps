@@ -17,7 +17,7 @@
     },
     {
         "Id": 2,
-        "Name": "Elastic Beanstalk itself is not free free AND you must also pay for the resources it provisions.", 
+        "Name": "Elastic Beanstalk itself is not free AND you must also pay for the resources it provisions.", 
         
         "Options": [
              { "Id": 1055, "QuestionId": 1010, "Name": "True", "IsAnswer": false },

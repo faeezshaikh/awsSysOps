@@ -105,6 +105,14 @@ angular.module('starter', ['ionic', 'starter.controllers','timer','LocalStorageM
 					}
 				}
 			})
+				 .state('app.contactus', {
+				url : '/contactus',
+				views : {
+					'menuContent' : {
+						templateUrl : 'templates/contactus.html'
+					}
+				}
+			})
 
   .state('app.single', {
     url: '/topics/:topicId',

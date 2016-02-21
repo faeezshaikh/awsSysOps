@@ -15,7 +15,7 @@
     },
     {
         "Id": 2,
-        "Name": "Amazon SWF is useful for automating workflows that include long-running human tasks (e.g. approvals, reviews, investigations, etc.) Amazon SWF reliably tracks the status of processing steps that run up to several days or months.", 
+        "Name": "Amazon SWF is useful for automating workflows that include long-running human tasks (e.g. approvals, reviews, investigations, etc). Amazon SWF reliably tracks the status of processing steps that run up to several days or months.", 
         
         "Options": [
             { "Id": 1055, "QuestionId": 1010, "Name": "True", "IsAnswer": true },
@@ -205,12 +205,12 @@
     },
      {
         "Id": 22,
-       "Name": "Currently there are ______ regions in AWS.",  
+       "Name": "Currently (as of 2016) there are ______ regions in AWS.",  
         "Options": [
             { "Id": 1055, "QuestionId": 1010, "Name": "20", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "11", "IsAnswer": true },
-            { "Id": 1057, "QuestionId": 1010, "Name": "40", "IsAnswer": false},
-            { "Id": 1058, "QuestionId": 1010, "Name": "30", "IsAnswer": false}]
+            { "Id": 1056, "QuestionId": 1010, "Name": "11", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "12", "IsAnswer": true},
+            { "Id": 1058, "QuestionId": 1010, "Name": "52", "IsAnswer": false}]
         
     },
      {
@@ -322,12 +322,13 @@
     },
     {
         "Id": 34,
-        "Name": "You have been tasked with identifying an appropriate storage solution for a NoSQL database that requires random I/O reads of greater than 100,000 4kB IOPS. Which EC2 option will meet this requirement?", 
-       "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "EBS provisioned IOPS ", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "SSD instance store ", "IsAnswer": false },
-            { "Id": 1057, "QuestionId": 1010, "Name": "EBS optimized instances", "IsAnswer": false },
-            { "Id": 1058, "QuestionId": 1010, "Name": "High Storage instance configured in RAID 10 ", "IsAnswer": true }]
+               "Name": "You have a web application where the front end is hosted on EC2 and the DB is hosted on RDS in a single AZ. You notice that when back ups are taken from your RDS instance, your applications performance is severely degraded. What should you do to fix this?",  
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Turn off backups for RDS. This will fix the performance issue immediately.", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Upgrade your RDS instance to an instance that has better disk IO. This way the IO suspension from the back up will be 'equaled out' by the increase in the new IO from the upgraded instance.", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Create a multi-AZ RDS instance and migrate your DB to this. This way when the backups are taken, they will be taken from the secondary and not the primary.", "IsAnswer": true },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Move your RDS instance to an in house SQL server which has Netbackup installed so that there is no longer a perfomance hit.", "IsAnswer": false }]
+        
     },
     {
         "Id": 35,
@@ -414,7 +415,7 @@
     },
     {
         "Id": 44,
-        "Name": "A comp. has a workflow that sends video files from their on-premise system to AWS for transcoding.They use EC2 worker that pull transcoding jobs from SQS. Why is SQS an appropriate service for this scenario.", 
+        "Name": "A company has a workflow that sends video files from their on-premise system to AWS for transcoding.They use EC2 worker that pull transcoding jobs from SQS. Why is SQS an appropriate service for this scenario.", 
        "Options": [
             { "Id": 1055, "QuestionId": 1010, "Name": "SQS guarantees the order of the messages.", "IsAnswer": false },
             { "Id": 1056, "QuestionId": 1010, "Name": "SQS synchronously provides transcoding output.", "IsAnswer": false },
@@ -446,7 +447,7 @@
             { "Id": 1055, "QuestionId": 1010, "Name": "Right click on the RDS instance and select 'Force Failover'", "IsAnswer": false },
             { "Id": 1056, "QuestionId": 1010, "Name": "Using the API call 'RDSForceFailover'", "IsAnswer": false },
             { "Id": 1057, "QuestionId": 1010, "Name": "You can't force a failover. A failover will only occur if something naturally goes wrong with the AWS estate.", "IsAnswer": false },
-            { "Id": 1058, "QuestionId": 1010, "Name": "By manually rebooting your RDS instance.", "IsAnswer": true }]
+            { "Id": 1058, "QuestionId": 1010, "Name": "Do it by manually rebooting your RDS instance.", "IsAnswer": true }]
     },
     {
         "Id": 48,
@@ -460,111 +461,70 @@
     },
     {
         "Id": 49,
-        "Name": "Which of the following is true?", 
-       "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "You can have read replica's of read replicas.", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "", "IsAnswer": true },
-            { "Id": 1057, "QuestionId": 1010, "Name": "Read Replica's can have also have multiple AZ's for redundancy.", "IsAnswer": false },
-            { "Id": 1058, "QuestionId": 1010, "Name": "", "IsAnswer": false }]
+       "Name": "You have written a CloudFormation template that creates 1 elastic load balancer fronting 2 EC2 instances. Which section of the template should you edit so that the DNS of the load balancer is returned upon creation of the stack.", 
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Resources", "IsAnswer": false},
+            { "Id": 1056, "QuestionId": 1010, "Name": "Parameters", "IsAnswer": false},
+            { "Id": 1057, "QuestionId": 1010, "Name": "Outputs", "IsAnswer": true},
+            { "Id": 1058, "QuestionId": 1010, "Name": "Mappings", "IsAnswer": false}]
+
     },
     {
         "Id": 50,
-        "Name": "", 
+        "Name": "A mission-critical two-tier web app is currently deployed in two Availability Zones in a single region, using Elastic Load Balancing and Auto Scaling. The app depends on synchronous replication (very low latency connectivity) at the database layer. The application needs to remain fully available even if one application Availability Zone goes off-line, and Auto Scaling cannot launch new instances in the remaining Availability Zones. How can the current architecture be enhanced to ensure this?", 
        "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "", "IsAnswer": true },
-            { "Id": 1057, "QuestionId": 1010, "Name": "", "IsAnswer": false },
-            { "Id": 1058, "QuestionId": 1010, "Name": "", "IsAnswer": false }]
+            { "Id": 1055, "QuestionId": 1010, "Name": "Deploy in three Availability Zones, with Auto Scaling minimum set to handle 33 percent peak load per zone.", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Deploy in three Availability Zones, with Auto Scaling minimum set to handle 50 percent peak load per zone.", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Deploy in two regions using Weighted Round Robin (WRR), with Auto Scaling minimums set for 50 percent peak load per Region.", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Deploy in two regions using Weighted Round Robin (WRR), with Auto Scaling minimums set for 100 percent peak load per region.", "IsAnswer": false }]
     },
     {
         "Id": 51,
-        "Name": "", 
+        "Name": "Which of the following are best suited for Amazon Glacier? Choose 2 answers", 
        "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "", "IsAnswer": true },
-            { "Id": 1057, "QuestionId": 1010, "Name": "", "IsAnswer": false },
-            { "Id": 1058, "QuestionId": 1010, "Name": "", "IsAnswer": false }]
+            { "Id": 1055, "QuestionId": 1010, "Name": "Frequently accessed data", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Active database storage", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Infrequently accessed data", "IsAnswer": true },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Cached session data", "IsAnswer": false },
+            { "Id": 1059, "QuestionId": 1010, "Name": "Data archives", "IsAnswer": true }]
     },
     {
         "Id": 52,
-        "Name": "", 
+        "Name": "You are deploying an application on Amazon Elastic Cloud Compute (EC2) that must call AWS APIs. What method of securely passing credentials to the application should you use?", 
        "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "", "IsAnswer": true },
-            { "Id": 1057, "QuestionId": 1010, "Name": "", "IsAnswer": false },
-            { "Id": 1058, "QuestionId": 1010, "Name": "", "IsAnswer": false }]
+            { "Id": 1055, "QuestionId": 1010, "Name": "Embed the API credentials into your JAR files.", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Store API credentials as an object in Amazon Simple Storage Service.", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Use AWS Identity and Access Management roles for EC2 instances.", "IsAnswer": true },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Pass API credentials to the instance using instance userdata.", "IsAnswer": false }]
     },
     {
         "Id": 53,
-        "Name": "", 
+        "Name": "You receive a Spot Instance at a bid of $0.03/hr. After 30 minutes, the Spot Price increases to $0.05/hr and your Spot Instance is terminated by AWS. What was the total EC2 compute cost of running your Spot Instance? ", 
        "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "", "IsAnswer": true },
-            { "Id": 1057, "QuestionId": 1010, "Name": "", "IsAnswer": false },
-            { "Id": 1058, "QuestionId": 1010, "Name": "", "IsAnswer": false }]
+            { "Id": 1055, "QuestionId": 1010, "Name": "$0.00", "IsAnswer": true },
+            { "Id": 1056, "QuestionId": 1010, "Name": "$0.02", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "$0.03", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "$0.05", "IsAnswer": false },
+            { "Id": 1059, "QuestionId": 1010, "Name": "$0.06", "IsAnswer": false }]
     },
     {
         "Id": 54,
-        "Name": "", 
+        "Name": "While reviewing the Auto Scaling events for your application you notice that your application is scaling up and down multiple times in the same hour. What design choice could you make to optimize for cost while preserving elasticity? Choose 2 answers", 
        "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "", "IsAnswer": true },
-            { "Id": 1057, "QuestionId": 1010, "Name": "", "IsAnswer": false },
-            { "Id": 1058, "QuestionId": 1010, "Name": "", "IsAnswer": false }]
+            { "Id": 1055, "QuestionId": 1010, "Name": "Modify the Auto Scaling group termination policy to terminate the newest instance first.", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Modify the Auto Scaling group termination policy to terminate the oldest instance first.", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Modify the Amazon CloudWatch alarm period that triggers your Auto Scaling scale down policy.", "IsAnswer": true },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Modify the Auto Scaling group cool-down timers.", "IsAnswer": true },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Modify the Auto Scaling policy to use scheduled scaling actions", "IsAnswer": false }]
     },
     {
         "Id": 55,
-        "Name": "", 
+        "Name": "After creating a new AWS account, you use the API to request 30 on-demand Amazon EC2 instances in a single Availability Zone. After 20 successful requests, subsequent requests failed. What could be a reason for this issue, and how would you resolve it?", 
        "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "", "IsAnswer": true },
-            { "Id": 1057, "QuestionId": 1010, "Name": "", "IsAnswer": false },
-            { "Id": 1058, "QuestionId": 1010, "Name": "", "IsAnswer": false }]
-    },
-    {
-        "Id": 56,
-        "Name": "", 
-       "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "", "IsAnswer": true },
-            { "Id": 1057, "QuestionId": 1010, "Name": "", "IsAnswer": false },
-            { "Id": 1058, "QuestionId": 1010, "Name": "", "IsAnswer": false }]
-    },
-    {
-        "Id": 57,
-        "Name": "", 
-       "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "", "IsAnswer": true },
-            { "Id": 1057, "QuestionId": 1010, "Name": "", "IsAnswer": false },
-            { "Id": 1058, "QuestionId": 1010, "Name": "", "IsAnswer": false }]
-    },
-    {
-        "Id": 58,
-        "Name": "", 
-       "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "", "IsAnswer": true },
-            { "Id": 1057, "QuestionId": 1010, "Name": "", "IsAnswer": false },
-            { "Id": 1058, "QuestionId": 1010, "Name": "", "IsAnswer": false }]
-    },
-    {
-        "Id": 59,
-        "Name": "", 
-       "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "", "IsAnswer": true },
-            { "Id": 1057, "QuestionId": 1010, "Name": "", "IsAnswer": false },
-            { "Id": 1058, "QuestionId": 1010, "Name": "", "IsAnswer": false }]
-    },
-    {
-        "Id": 60,
-        "Name": "", 
-       "Options": [
-            { "Id": 1055, "QuestionId": 1010, "Name": "", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "", "IsAnswer": true },
-            { "Id": 1057, "QuestionId": 1010, "Name": "", "IsAnswer": false },
-            { "Id": 1058, "QuestionId": 1010, "Name": "", "IsAnswer": false }]
+            { "Id": 1055, "QuestionId": 1010, "Name": "AWS allows you to provision no more than 20 instances per Availability Zone. Select a different Availability Zone and retry the failed request.", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "You need to use Amazon Virtual Private Cloud (VPC) in order to provision more than 20 instances in a single Availability Zone. Simply terminate the resources already provisioned and re-launch them all in a VPC.", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "You encountered an API throttling situation and should try the failed requests using an exponential decay retry algorithm.", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "You encountered a soft limit of 20 instances per region. Submit the limit increase form and retry the failed requests once approved.", "IsAnswer": true }]
     }
     ]
 }
