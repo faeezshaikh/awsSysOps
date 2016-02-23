@@ -1,7 +1,7 @@
 {
     "quiz": {
         "Id": 10,
-        "name": "SWF Quiz",
+        "name": "Practice Quiz 10",
         "logo" : "data/img/SWF.png"
     },
     "questions": [{

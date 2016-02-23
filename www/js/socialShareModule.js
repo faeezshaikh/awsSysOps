@@ -20,8 +20,8 @@ angular.module('socialShareModule', [ 'ngCordova' ]).service('shareService', [ '
 		console.log('Device is ' + platform);
 		
 		var appstoreLink = [ url ];
-		var message = "Just thought you might want to check this app out. I found it pretty useful preparing for the AWS Certified Solutions Architect exam. " + url;
-		var tweet = "Great app to help you prepare for the AWS Certified Solutions Architect exam. Check it out in app stores ";
+		var message = "Just thought you might want to check this app out. I found it pretty useful preparing for the AWS Certified SysOps Admin exam. " + url;
+		var tweet = "Great app to help you prepare for the AWS Certified SysOps Admin exam. Check it out in app stores ";
 		var subject = "Check out this app in the app store";
 //		var appImage = [ 'data/img/icon.png' ];
 		var appImage = null;
