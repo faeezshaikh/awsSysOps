@@ -15,7 +15,7 @@ angular.module('socialShareModule', [ 'ngCordova' ]).service('shareService', [ '
 		}
 		if(p == 'Android') {
 			platform = 'android';
-			url = 'https://goo.gl/mruqwn'; // android version
+			url = 'https://goo.gl/ohd13Y'; // android version
 		}
 		console.log('Device is ' + platform);
 		
