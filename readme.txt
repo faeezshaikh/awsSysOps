@@ -12,12 +12,29 @@ jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore awsArch-key.key
 C:\Users\FSHAI\AppData\Local\Android\android-sdk\build-tools\23.0.1\zipalign -v 4 android-release-unsigned.apk AWS-Certified-Sysops.apk
 /Users/faeezshaikh/Library/Android/sdk/build-tools/23.0.2/zipalign -v 4 android-release-unsigned.apk AWS-Sysops.apk
 
--------------------
+---------------------
 
+ANDROID SCREENSHOTS
+---------------------
+1. Start Genymotion Emulator --> Custom Phone
+2. sudo ionic run android (This will install the apk on the genymotion emulator).
+3. For Screenshots, Android Studio --> (Android Device monitor) DDMS --> Select emulator --> Camera icon.
 
-1. Start Android Virtual Device from AVD manager (either standalone or from android studio)
+(Optional)
+ Start Android Virtual Device from AVD manager (either standalone or from android studio)
 
 2. Install the apk in the emulator using this command:
 ~/Android/~platform-tools/adb install yourfile.apk
 
-3. For Screenshots, Android Studio --> DDMS --> Select emulator --> Camera icon.
+
+-----------------
+IOS SCREENSHOTS
+-----------------
+
+1. sudo ionic build ios
+2. Run in emulator using this command: (Replace .app file)
+
+	ios-sim launch /Users/faeezshaikh/git/awsArch/platforms/ios/build/emulator/AWS-Arch.app -devicetypeid com.apple.CoreSimulator.SimDeviceType.iPhone-6s
+	
+3. Take screenshots from emulator
+4. Use launchkit.io for appstore images	
