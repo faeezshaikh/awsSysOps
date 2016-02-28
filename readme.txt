@@ -34,7 +34,20 @@ IOS SCREENSHOTS
 1. sudo ionic build ios
 2. Run in emulator using this command: (Replace .app file)
 
-	ios-sim launch /Users/faeezshaikh/git/awsArch/platforms/ios/build/emulator/AWS-Arch.app -devicetypeid com.apple.CoreSimulator.SimDeviceType.iPhone-6s
+	ios-sim launch /Users/faeezshaikh/git/awsArch/platforms/ios/build/emulator/AWS-Arch.app -devicetypeid com.apple.CoreSimulator.SimDeviceType.iPhone-6s -cls
 	
 3. Take screenshots from emulator
 4. Use launchkit.io for appstore images	
+
+
+----
+TIPS
+-----
+
+ionic platform remove ios
+ionic platform add ios
+
+
+sudo chmod -R a+rw ios/
+
+
