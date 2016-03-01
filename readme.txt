@@ -51,3 +51,8 @@ ionic platform add ios
 sudo chmod -R a+rw ios/
 
 
+Remove from Info.plist file
+
+ <key>CFBundleIconFile</key>
+    <string>icon.png</string>
+
