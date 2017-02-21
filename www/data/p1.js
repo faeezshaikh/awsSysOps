@@ -103,7 +103,7 @@
             { "Id": 1055, "QuestionId": 1010, "Name": "Utilize S3 to collect the inbound sensor data analyze the data from S3 with a daily scheduled Data Pipeline and save the results to a Redshift Cluster.", "IsAnswer": false },
             { "Id": 1056, "QuestionId": 1010, "Name": "Utilize Amazon Kinesis to collect the inbound sensor data, analyze the data with Kinesis clients and save the results to a Redshift cluster using EMR.", "IsAnswer": true },
             { "Id": 1057, "QuestionId": 1010, "Name": "Utilize SQS to collect the inbound sensor data analyze the data from SQS with Amazon Kinesis and save the results to a Microsoft SQL Server RDS instance.", "IsAnswer": false },
-            { "Id": 1058, "QuestionId": 1010, "Name": "Utilize EMR to collect the inbound sensor data, analyze the data from EUR with Amazon Kinesis and save me results to DynamoDB.", "IsAnswer": false }]
+            { "Id": 1058, "QuestionId": 1010, "Name": "Utilize EMR to collect the inbound sensor data, analyze the data from EUR with Amazon Kinesis and save the results to DynamoDB.", "IsAnswer": false }]
         
     }]
 }
