@@ -40,8 +40,8 @@
                "Name": "You have started a new job and are reviewing your company's infrastructure on AWS. You notice one web application where they have an Elastic Load Balancer (ELB) in front of web instances in an Auto Scaling Group. When you check the metrics for the ELB in CloudWatch you see four healthy instances In Availability Zone (AZ) A and zero in AZ B There are zero unhealthy instances.What do you need to fix to balance the instances across AZs? ",  
         "Options": [
             { "Id": 1055, "QuestionId": 1010, "Name": "Set the ELB to only be attached to another AZ", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "Make sure Auto Scaling is configured to launch in both AZs", "IsAnswer": false },
-            { "Id": 1057, "QuestionId": 1010, "Name": "Make sure your AMI is available in both AZs", "IsAnswer": true },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Make sure Auto Scaling is configured to launch in both AZs", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Make sure your AMI is available in both AZs", "IsAnswer": false },
             { "Id": 1058, "QuestionId": 1010, "Name": "Make sure the maximum size of the Auto Scaling Group is greater than 4", "IsAnswer": false }]
         
     },
@@ -125,6 +125,37 @@
             { "Id": 1057, "QuestionId": 1010, "Name": "Modify the Auto Scaling group termination policy to terminate the newest instance first.", "IsAnswer": false },
             { "Id": 1058, "QuestionId": 1010, "Name": "Modify the Auto Scaling group cool-down timers.", "IsAnswer": true },
             { "Id": 1059, "QuestionId": 1010, "Name": "Modify the Amazon CloudWatch alarm period that triggers your Auto Scaling scale down policy. ", "IsAnswer": true }]
+        
+    },
+    {
+        "Id": 13,
+               "Name": "You have set up Individual AWS accounts for each project. You have been asked to make sure your AWS Infrastructure costs do not exceed the budget set per project for each month. Which of the following approaches can help ensure that you do not exceed the budget each month?",  
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Consolidate your accounts so you have a single bill for all accounts and projects.","IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Set up auto scaling with CloudWatch alarms using SNS to notify you when you are running too many Instances in a given account.", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Set up CloudWatch billing alerts for all AWS resources used by each project, with a notification occurring when the amount for each resource tagged to a particular project matches the budget allocated to the project.", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Set up CloudWatch billing alerts for all AWS resources used by each account, with email notifications when it hits 50%. 80% and 90% of its budgeted monthly spend.", "IsAnswer": true }]
+        
+    },
+    {
+        "Id": 14,
+               "Name": "When preparing for a compliance assessment of your system built inside of AWS. What are three best-practices for you to prepare for an audit? (Choose three.)",  
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Gather evidence of your IT operational controls.","IsAnswer": true },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Request and obtain applicable third-party audited AWS compliance reports and certifications.", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Request and obtain a compliance and security tour of an AWS data center for a pre-assessment security review.", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Request and obtain approval from AWS to perform relevant network scans and in-depth penetration tests of your system's Instances and endpoints.", "IsAnswer": true },
+            { "Id": 1059, "QuestionId": 1010, "Name": "Schedule meetings with AWS's third-party auditors to provide evidence of AWS compliance that maps to your control objectives", "IsAnswer": false }]
+        
+    },
+    {
+        "Id": 15,
+               "Name": "Your company is moving towards tracking web page users with a small tracking Image loaded on each page Currently you are serving this image out of US-East, but are starting to get concerned about the time It takes to load the image for users on the west coast. What are the two best ways to speed up serving this image? (Choose two.)",  
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Use Route 53's Latency Based Routing and serve the image out of US-West-2 as well as US-East-1.","IsAnswer": true },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Serve the image out through CloudFront.", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Serve the image out of S3 so that it isn't being served oft of your web application tier.", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Use EBS PIOPs to serve the image faster out of your EC2 instances.", "IsAnswer": false }]
         
     }]
 }

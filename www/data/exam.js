@@ -110,9 +110,9 @@
         "Name": "The maximum size of a General Purpose or SSD EBS  storage device is:", 
         "Options": [
             { "Id": 1055, "QuestionId": 1010, "Name": "100 GB", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "1 TB", "IsAnswer": true },
+            { "Id": 1056, "QuestionId": 1010, "Name": "1 TB", "IsAnswer": false },
             { "Id": 1056, "QuestionId": 1010, "Name": "500 GB", "IsAnswer": false },
-            { "Id": 1056, "QuestionId": 1010, "Name": "10 TB", "IsAnswer": false }]
+            { "Id": 1056, "QuestionId": 1010, "Name": "16 TB", "IsAnswer": true }]
         
     },
      {
@@ -308,8 +308,8 @@
        "Options": [
             { "Id": 1055, "QuestionId": 1010, "Name": "Importing data and optimizing queries ", "IsAnswer": false },
             { "Id": 1056, "QuestionId": 1010, "Name": "Installing and periodically patching the database software ", "IsAnswer": true },
-            { "Id": 1057, "QuestionId": 1010, "Name": "Creating and maintaining automated database backups with a point-in-time recovery of up to five minutes", "IsAnswer": false },
-            { "Id": 1058, "QuestionId": 1010, "Name": "Creating and maintaining automated database backups in compliance with regulatory long-term retention requirements", "IsAnswer": true }]
+            { "Id": 1057, "QuestionId": 1010, "Name": "Creating and maintaining automated database backups with a point-in-time recovery of up to five minutes", "IsAnswer": true },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Creating and maintaining automated database backups in compliance with regulatory long-term retention requirements", "IsAnswer": false }]
     },
     {
         "Id": 33,
@@ -565,8 +565,8 @@
         "Name": "Your organization's security policy requires that all privileged users either use frequently rotated passwords or one-time access credentials in addition to username/password. Which two of the following options would allow an organization to enforce this policy for AWS users? Choose 2 answers", 
        "Options": [
             { "Id": 1055, "QuestionId": 1010, "Name": "Configure multi-factor authentication for privileged IAM users", "IsAnswer": true },
-            { "Id": 1056, "QuestionId": 1010, "Name": "Create IAM users for privileged accounts", "IsAnswer": false },
-            { "Id": 1057, "QuestionId": 1010, "Name": "Implement identity federation between your organization's Identity provider leveraging the IAM Security Token Service", "IsAnswer": true },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Create IAM users for privileged accounts", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Implement identity federation between your organization's Identity provider leveraging the IAM Security Token Service", "IsAnswer": false },
             { "Id": 1058, "QuestionId": 1010, "Name": "Enable the IAM single-use password policy option for privileged users", "IsAnswer": false }]
     }
     ]

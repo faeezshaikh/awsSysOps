@@ -100,7 +100,7 @@
        "Options": [
             { "Id": 1055, "QuestionId": 1010, "Name": "EC2", "IsAnswer": false },
             { "Id": 1056, "QuestionId": 1010, "Name": "Elastic Beanstalk", "IsAnswer": false },
-            { "Id": 1057, "QuestionId": 1010, "Name": "Opworks", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Opsworks", "IsAnswer": true },
             { "Id": 1058, "QuestionId": 1010, "Name": "CloudFront", "IsAnswer": false }]
     }
      ]
