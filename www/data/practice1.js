@@ -597,6 +597,16 @@
             { "Id": 1057, "QuestionId": 1010, "Name": "10", "IsAnswer": false },
             { "Id": 1057, "QuestionId": 1010, "Name": "100", "IsAnswer": false }]
         
+    },
+    {
+        "Id": 61,
+              "Name": "You have been asked to propose a multi-region deployment of a web-facing application where a controlled portion of your traffic is being processed by an alternate region. Which configuration would achieve that goal?",  
+        "Options": [
+           { "Id": 1055, "QuestionId": 1010, "Name": "Route53 record sets with weighted routing policy.", "IsAnswer": true },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Route53 record sets with latency based routing policy.", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Auto Scaling with scheduled scaling actions set.", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Elastic Load Balancing with health checks enabled.", "IsAnswer": false }]
+        
     }]
 }
 

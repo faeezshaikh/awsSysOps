@@ -54,7 +54,7 @@ angular.module('starter.controllers', [ 'socialShareModule'])
 			} else {
 				// Show the modal if not warned.
 				
-				if (examTopic == 400 || examTopic == 100) {
+				if (examTopic == 100) {
 					$scope.bigExam = 'big'; // the Warning modal differs for practice exam vs certification exam in title
 				}
 
