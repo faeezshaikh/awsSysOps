@@ -623,6 +623,16 @@
               { "Id": 1057, "QuestionId": 1010, "Name": "Mark the S3 bucket private and allow access to CloudFront by means of Roles", "IsAnswer": false},
               { "Id": 1058, "QuestionId": 1010, "Name": "Mark the S3 bucket private and and create an Origin Access Identity to access the objects", "IsAnswer": true}]
 
-      }
+      },
+    {
+        "Id": 61,
+              "Name": "A user has created a VPC with the public and private subnets using the VPC wizard. The VPC has CIDR 20.0.0.0/16. The public subnet uses CIDR 20.0.1.0/24. The user is planning to host a web server in the public subnet (port 80) and a DB server in the private subnet (port 3306). The user is configuring a security group for the public subnet (WebSecGrp) and the private subnet (DBSecGrp). Which of the below mentioned entries is required in the web server security group (WebSecGrp)?",  
+        "Options": [
+           { "Id": 1055, "QuestionId": 1010, "Name": "Configure Destination as DB Security group ID (DbSecGrp. for port 3306 Outbound).", "IsAnswer": true },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Configure port 80 for Destination 0.0.0.0/0 Outbound", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Configure port 3306 for source 20.0.0.0/24 InBound.", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Configure port 80 InBound for source 20.0.0.0/16.", "IsAnswer": false }]
+        
+    }
      ]
 }
