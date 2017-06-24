@@ -568,6 +568,15 @@
             { "Id": 1056, "QuestionId": 1010, "Name": "Create IAM users for privileged accounts", "IsAnswer": true },
             { "Id": 1057, "QuestionId": 1010, "Name": "Implement identity federation between your organization's Identity provider leveraging the IAM Security Token Service", "IsAnswer": false },
             { "Id": 1058, "QuestionId": 1010, "Name": "Enable the IAM single-use password policy option for privileged users", "IsAnswer": false }]
+    },
+    {
+        "Id": 61,
+        "Name": "You have identified network throughput as a bottleneck on your t2 small EC2 instance when uploading data Into Amazon S3 In the same region. How do you remedy this situation?", 
+       "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Add an additional ENI.", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Change to a larger Instance.", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Use DirectConnect between EC2 and S3.", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Use EBS PIOPS on the local volume.", "IsAnswer": false }]
     }
     ]
 }
