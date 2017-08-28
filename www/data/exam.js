@@ -577,6 +577,16 @@
             { "Id": 1056, "QuestionId": 1010, "Name": "Change to a larger Instance.", "IsAnswer": true },
             { "Id": 1057, "QuestionId": 1010, "Name": "Use DirectConnect between EC2 and S3.", "IsAnswer": false },
             { "Id": 1058, "QuestionId": 1010, "Name": "Use EBS PIOPS on the local volume.", "IsAnswer": false }]
+    },
+    {
+        "Id": 62,
+        "Name": "A user is launching an EC2 instance in the US East region. Which of the below mentioned options is recommended by AWS with respect to the selection of the availability zone?", 
+       "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Always select the US-East-1-a zone for HA", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Do not select the AZ; instead let AWS select the AZ", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "The user can never select the availability zone while launching an instance", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Always select the AZ while launching an instance", "IsAnswer": false }],
+        "Explanation": "When launching an instance with EC2, AWS recommends not to select the availability zone (AZ). AWS specifies that the default Availability Zone should be accepted. This is because it enables AWS to select the best Availability Zone based on the system health and available capacity. If the user launches additional instances, only then an Availability Zone should be specified. This is to specify the same or different AZ from the running instances."
     }
     ]
 }
