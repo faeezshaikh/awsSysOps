@@ -35,7 +35,7 @@ ANDROID SCREENSHOTS
 IOS SCREENSHOTS
 -----------------
 
-1. sudo ionic build ios
+1. sudo cordova build --release ios
 2. Run in emulator using this command: (Replace .app file)
 
 	ios-sim launch /Users/faeezshaikh/git/awsArch/platforms/ios/build/emulator/AWS-Arch.app -devicetypeid com.apple.CoreSimulator.SimDeviceType.iPhone-6s -cls

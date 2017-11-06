@@ -587,6 +587,16 @@
             { "Id": 1057, "QuestionId": 1010, "Name": "The user can never select the availability zone while launching an instance", "IsAnswer": false },
             { "Id": 1058, "QuestionId": 1010, "Name": "Always select the AZ while launching an instance", "IsAnswer": false }],
         "Explanation": "When launching an instance with EC2, AWS recommends not to select the availability zone (AZ). AWS specifies that the default Availability Zone should be accepted. This is because it enables AWS to select the best Availability Zone based on the system health and available capacity. If the user launches additional instances, only then an Availability Zone should be specified. This is to specify the same or different AZ from the running instances."
+    },
+    {
+        "Id": 63,
+        "Name": "A user has launched an EC2 instance. The instance got terminated as soon as it was launched. Which of the below mentioned options is not a possible reason for this?", 
+       "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "The user account has reached the maximum EC2 instance limit.", "IsAnswer": true },
+            { "Id": 1056, "QuestionId": 1010, "Name": "The snapshot is corrupt.", "IsAnswer": false },
+            { "Id": 1057, "QuestionId": 1010, "Name": "The AMI is missing. It is the required part.", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "The user account has reached the maximum volume limit.", "IsAnswer": false }],
+        "Explanation": "When the user account has reached the maximum number of EC2 instances, it will not be allowed to launch an instance. AWS will throw an `InstanceLimitExceeded' error. For all other reasons, such as 'AMI is missing part', 'Corrupt Snapshot' or 'Volume limit has reached' it will launch an EC2 instance and then terminate it."
     }
     ]
 }
