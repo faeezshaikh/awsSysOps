@@ -597,6 +597,17 @@
             { "Id": 1057, "QuestionId": 1010, "Name": "The AMI is missing. It is the required part.", "IsAnswer": false },
             { "Id": 1058, "QuestionId": 1010, "Name": "The user account has reached the maximum volume limit.", "IsAnswer": false }],
         "Explanation": "When the user account has reached the maximum number of EC2 instances, it will not be allowed to launch an instance. AWS will throw an `InstanceLimitExceeded' error. For all other reasons, such as 'AMI is missing part', 'Corrupt Snapshot' or 'Volume limit has reached' it will launch an EC2 instance and then terminate it."
+    },
+    {
+        "Id": 64,
+        "Name": "You run a 2000-engineer organization. You are about to begin using AWS at a large scale for the first time. You want to integrate with your existing identity management system running on Microsoft Active Directory, because your organization is a power-user of Active Directory. How should you manage your AWS identities in the most simple manner?", 
+       "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Use a large AWS Directory Service Simple AD.", "IsAnswer": false },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Use a large AWS Directory Service AD Connector.", "IsAnswer": true },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Use an Sync Domain running on AWS Directory Service.", "IsAnswer": false },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Use an AWS Directory Sync Domain running on AWS Lambda", "IsAnswer": false }],
+        "Explanation": "You must use AD Connector as a power-user of Microsoft Active Directory. Simple AD only works with a subset of AD functionality. Sync Domains do not exist; they are made up answers. AD Connector is a directory gateway that allows you to proxy directory requests to your on-premises Microsoft Active Directory, without caching any information in the cloud. AD Connector comes in 2 sizes; small and large. A small AD Connector is designed for smaller organizations of up to 500 users. A large AD Connector is designed for larger organizations of up to 5,000 users.",
+        "Ref": "https://aws.amazon.com/directoryservice/details/"
     }
     ]
 }
